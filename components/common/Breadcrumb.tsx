@@ -1,7 +1,6 @@
 "use client"
 
 import Link from "next/link"
-import { usePathname } from "next/navigation"
 import { Fragment } from "react"
 import { COMPANY } from "@/lib/constants"
 
@@ -15,8 +14,6 @@ interface BreadcrumbProps {
 }
 
 export function Breadcrumb({ items }: BreadcrumbProps) {
-  const pathname = usePathname()
-
   const allItems: BreadcrumbItem[] = [
     { label: "Accueil", href: "/" },
     ...items,

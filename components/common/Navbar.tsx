@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { COMPANY, SERVICES } from "@/lib/constants"
+import { motion, AnimatePresence } from "framer-motion"
+
 import { Button } from "@/components/ui/button"
 
 export function Navbar() {
@@ -117,41 +118,59 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Menu mobile */}
-      <div
-        id="mobile-menu"
-        className={`md:hidden overflow-hidden transition-all duration-300 ${
-          menuOpen ? "max-h-screen" : "max-h-0"
-        }`}
-        aria-hidden={!menuOpen}
-      >
-        <nav
-          className="bg-[#1C2B3A] border-t border-white/10 px-4 py-4 flex flex-col gap-1"
-          aria-label="Navigation mobile"
-        >
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`py-2.5 px-3 rounded text-sm font-medium transition-colors ${
-                isActive(link.href)
-                  ? "text-[#D97706] bg-white/5"
-                  : "text-gray-300 hover:text-white hover:bg-white/5"
-              }`}
+      {/* Menu mobile — AnimatePresence pour animation fluide */}
+      <AnimatePresence initial={false}>
+        {menuOpen && (
+          <motion.div
+            id="mobile-menu"
+            key="mobile-menu"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.25, ease: "easeInOut" }}
+            className="md:hidden overflow-hidden"
+            aria-hidden={!menuOpen}
+          >
+            <nav
+              className="bg-[#1C2B3A] border-t border-white/10 px-4 py-4 flex flex-col gap-1"
+              aria-label="Navigation mobile"
             >
-              {link.label}
-            </Link>
-          ))}
-          <div className="pt-2 border-t border-white/10 mt-1">
-            <Button
-              asChild
-              className="w-full bg-[#D97706] hover:bg-[#B45309] text-white font-semibold"
-            >
-              <Link href="/contact">Demander un devis gratuit</Link>
-            </Button>
-          </div>
-        </nav>
-      </div>
+              {navLinks.map((link, i) => (
+                <motion.div
+                  key={link.href}
+                  initial={{ x: -12, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ delay: i * 0.05, duration: 0.2 }}
+                >
+                  <Link
+                    href={link.href}
+                    className={`block py-2.5 px-3 rounded text-sm font-medium transition-colors ${
+                      isActive(link.href)
+                        ? "text-[#D97706] bg-white/5"
+                        : "text-gray-300 hover:text-white hover:bg-white/5"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                </motion.div>
+              ))}
+              <motion.div
+                initial={{ x: -12, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: navLinks.length * 0.05, duration: 0.2 }}
+                className="pt-2 border-t border-white/10 mt-1"
+              >
+                <Button
+                  asChild
+                  className="w-full bg-[#D97706] hover:bg-[#B45309] text-white font-semibold"
+                >
+                  <Link href="/contact">Demander un devis gratuit</Link>
+                </Button>
+              </motion.div>
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   )
 }

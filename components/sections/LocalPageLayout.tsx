@@ -1,4 +1,3 @@
-import type { Metadata } from "next"
 import Link from "next/link"
 import { Breadcrumb } from "@/components/common/Breadcrumb"
 import { Button } from "@/components/ui/button"
@@ -9,7 +8,7 @@ interface LocalPageProps {
   slug: string
   lat: number
   lng: number
-  description: string
+  description?: string
   intro: string
   specificContent?: React.ReactNode
 }
@@ -19,7 +18,6 @@ export function LocalPageLayout({
   slug,
   lat,
   lng,
-  description,
   intro,
   specificContent,
 }: LocalPageProps) {

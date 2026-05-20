@@ -3,6 +3,7 @@
 import { useState, useCallback } from "react"
 import Image from "next/image"
 import dynamic from "next/dynamic"
+import { Camera } from "lucide-react"
 import { Breadcrumb } from "@/components/common/Breadcrumb"
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Badge } from "@/components/ui/badge"
@@ -94,6 +95,32 @@ const REALISATIONS: Realisation[] = [
   },
 ]
 
+function RealisationCard({ r }: { r: Realisation }) {
+  const [error, setError] = useState(false)
+  if (error) {
+    return (
+      <div className="relative aspect-[4/3] bg-[#1C2B3A] flex flex-col items-center justify-center gap-2">
+        <Camera className="w-8 h-8 text-[#D97706]/40" />
+        <span className="text-white/30 text-xs uppercase tracking-widest font-medium">
+          {r.title}
+        </span>
+        <span className="text-white/20 text-xs">Photo à venir</span>
+      </div>
+    )
+  }
+  return (
+    <Image
+      src={r.src}
+      alt={r.alt}
+      width={600}
+      height={450}
+      className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+      sizes="(max-width: 768px) 50vw, (max-width: 1280px) 33vw, 25vw"
+      onError={() => setError(true)}
+    />
+  )
+}
+
 export function RealisationsClient() {
   const [activeCategory, setActiveCategory] = useState("all")
   const [lightboxIndex, setLightboxIndex] = useState(-1)
@@ -174,14 +201,7 @@ export function RealisationsClient() {
                     if (e.key === "Enter" || e.key === " ") openLightbox(idx)
                   }}
                 >
-                  <Image
-                    src={r.src}
-                    alt={r.alt}
-                    width={600}
-                    height={450}
-                    className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
-                    sizes="(max-width: 768px) 50vw, (max-width: 1280px) 33vw, 25vw"
-                  />
+                  <RealisationCard r={r} />
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex flex-col justify-end p-3 opacity-0 group-hover:opacity-100">
                     <Badge

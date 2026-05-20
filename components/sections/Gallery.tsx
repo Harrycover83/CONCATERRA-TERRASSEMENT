@@ -1,8 +1,10 @@
 "use client"
 
+import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
+import { Camera } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const PHOTOS = [
@@ -38,6 +40,47 @@ const PHOTOS = [
   },
 ]
 
+function GalleryItem({ photo, index }: { photo: (typeof PHOTOS)[0]; index: number }) {
+  const [error, setError] = useState(false)
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.4, delay: index * 0.06 }}
+      className="break-inside-avoid relative overflow-hidden rounded-lg group"
+    >
+      <div className="relative aspect-[4/3] bg-[#1C2B3A]">
+        {error ? (
+          <div className="absolute inset-0 flex flex-col items-center justify-center gap-2">
+            <Camera className="w-8 h-8 text-[#D97706]/40" />
+            <span className="text-white/30 text-xs uppercase tracking-widest font-medium">
+              {photo.category}
+            </span>
+            <span className="text-white/20 text-xs">Photo à venir</span>
+          </div>
+        ) : (
+          <>
+            <Image
+              src={photo.src}
+              alt={photo.alt}
+              fill
+              sizes="(max-width: 768px) 50vw, 33vw"
+              className="object-cover group-hover:scale-105 transition-transform duration-300"
+              onError={() => setError(true)}
+            />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-200 flex items-end p-3">
+              <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-xs font-medium bg-[#D97706] px-2 py-1 rounded">
+                {photo.category}
+              </span>
+            </div>
+          </>
+        )}
+      </div>
+    </motion.div>
+  )
+}
+
 export function Gallery() {
   return (
     <section className="py-20 bg-[#F5F5F0]" id="galerie">
@@ -56,29 +99,7 @@ export function Gallery() {
 
         <div className="columns-2 md:columns-3 gap-4 space-y-4">
           {PHOTOS.map((photo, index) => (
-            <motion.div
-              key={photo.src}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.06 }}
-              className="break-inside-avoid relative overflow-hidden rounded-lg group"
-            >
-              <div className="relative aspect-[4/3] bg-gray-200">
-                <Image
-                  src={photo.src}
-                  alt={photo.alt}
-                  fill
-                  sizes="(max-width: 768px) 50vw, 33vw"
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-200 flex items-end p-3">
-                  <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-xs font-medium bg-[#D97706] px-2 py-1 rounded">
-                    {photo.category}
-                  </span>
-                </div>
-              </div>
-            </motion.div>
+            <GalleryItem key={photo.src} photo={photo} index={index} />
           ))}
         </div>
 

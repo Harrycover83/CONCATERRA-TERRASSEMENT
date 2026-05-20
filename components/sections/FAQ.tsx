@@ -8,7 +8,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { COMPANY } from "@/lib/constants"
 
 export function FAQ() {
   const faqSchema = {

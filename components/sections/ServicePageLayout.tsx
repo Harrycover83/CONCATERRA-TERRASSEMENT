@@ -1,4 +1,3 @@
-import type { Metadata } from "next"
 import Link from "next/link"
 import { Breadcrumb } from "@/components/common/Breadcrumb"
 import { Button } from "@/components/ui/button"
@@ -7,8 +6,8 @@ import { COMPANY, SERVICES } from "@/lib/constants"
 interface ServicePageLayoutProps {
   title: string
   slug: string
-  metaDescription: string
-  keywords: string[]
+  metaDescription?: string
+  keywords?: string[]
   intro: string
   prestations: { title: string; description: string }[]
   arguments: { title: string; description: string }[]
@@ -18,8 +17,6 @@ interface ServicePageLayoutProps {
 export function ServicePageLayout({
   title,
   slug,
-  metaDescription,
-  keywords,
   intro,
   prestations,
   arguments: args,

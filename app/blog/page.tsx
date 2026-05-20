@@ -6,22 +6,24 @@ import { BLOG_POSTS } from "@/lib/blog-data"
 import { COMPANY } from "@/lib/constants"
 
 export const metadata: Metadata = {
-  title: "Blog Terrassement & Travaux Publics dans le Var — Concaterra",
+  title: "Blog Renforcement Fondation & Terrassement Var — Concaterra",
   description:
-    "Conseils, guides et actualités sur le terrassement et les travaux publics dans le Var (83) par Concaterra Terrassement. Tout savoir sur les prix, techniques et démarches.",
+    "Guides pratiques sur le renforcement de fondation (micropieux, reprise en sous-œuvre, Cat Nat), le terrassement et les VRD dans le Var (83) par Concaterra Terrassement.",
   keywords: [
+    "renforcement fondation Var",
+    "micropieux Var",
+    "fissures maison sécheresse Var",
+    "Cat Nat sinistre sécheresse Var",
     "blog terrassement Var",
-    "conseils terrassement 83",
-    "guide travaux publics PACA",
-    "prix terrassement Provence",
+    "conseils fondations 83",
   ],
   alternates: {
     canonical: `${COMPANY.siteUrl}/blog`,
   },
   openGraph: {
-    title: "Blog — Terrassement & Travaux Publics Var (83) — Concaterra",
+    title: "Blog — Fondations, Terrassement & Travaux Publics Var (83) — Concaterra",
     description:
-      "Conseils et guides sur le terrassement dans le Var. Concaterra Terrassement, Gonfaron (83590).",
+      "Guides sur le renforcement de fondation, micropieux, Cat Nat sécheresse et terrassement dans le Var. Concaterra Terrassement, Gonfaron (83590).",
     url: `${COMPANY.siteUrl}/blog`,
   },
 }
@@ -36,14 +38,13 @@ export default function BlogPage() {
         <section className="bg-[#1C2B3A] py-16 text-white">
           <div className="container mx-auto px-4">
             <p className="text-[#D97706] font-semibold uppercase tracking-widest text-sm mb-3">
-              Conseils & Guides
+              Fondations · Terrassement · Assurance
             </p>
             <h1 className="font-barlow-condensed font-extrabold text-4xl sm:text-5xl uppercase mb-4">
-              Blog Terrassement
+              Guides &amp; Conseils
             </h1>
             <p className="text-gray-300 max-w-xl text-lg">
-              Tout savoir sur le terrassement, les travaux VRD et les
-              aménagements extérieurs dans le Var (83).
+              Renforcement de fondation, micropieux, sinistres sécheresse, Cat Nat… et terrassement dans le Var (83) : tout ce qu&apos;un propriétaire doit savoir.
             </p>
           </div>
         </section>

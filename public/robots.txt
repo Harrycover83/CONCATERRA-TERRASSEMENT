@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://concaterra-terrassement.fr
+
+# Sitemaps
+Sitemap: https://concaterra-terrassement.fr/sitemap.xml

@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { Phone, FileText, ChevronDown, Shield, Clock, MapPin, AlertTriangle, CheckCircle } from "lucide-react"
+import { Phone, FileText, ChevronDown, Shield, Clock, MapPin, CheckCircle } from "lucide-react"
 
 export function Hero() {
   return (

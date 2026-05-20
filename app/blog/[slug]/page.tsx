@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import Link from "next/link"
+import { marked } from "marked"
 import { Breadcrumb } from "@/components/common/Breadcrumb"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -37,10 +38,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default function BlogArticlePage({ params }: Props) {
+export default async function BlogArticlePage({ params }: Props) {
   const post = BLOG_POSTS.find((p) => p.slug === params.slug)
   if (!post) notFound()
 
+  const htmlContent = await marked.parse(post.content)
   const otherPosts = BLOG_POSTS.filter((p) => p.slug !== post.slug)
 
   const articleSchema = {
@@ -111,7 +113,7 @@ export default function BlogArticlePage({ params }: Props) {
               {/* Article */}
               <article
                 className="lg:col-span-2 prose prose-slate max-w-none prose-headings:font-barlow-condensed prose-headings:uppercase prose-h2:text-2xl prose-h3:text-xl prose-a:text-[#D97706]"
-                dangerouslySetInnerHTML={{ __html: post.content }}
+                dangerouslySetInnerHTML={{ __html: htmlContent }}
               />
 
               {/* Sidebar */}
