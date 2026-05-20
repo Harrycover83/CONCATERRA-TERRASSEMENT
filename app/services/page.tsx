@@ -1,0 +1,99 @@
+import type { Metadata } from "next"
+import Link from "next/link"
+import { Breadcrumb } from "@/components/common/Breadcrumb"
+import { SERVICES, COMPANY } from "@/lib/constants"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+
+export const metadata: Metadata = {
+  title: "Nos services de terrassement et travaux publics dans le Var",
+  description:
+    "Découvrez toutes nos prestations : terrassement, VRD, enrochement, aménagement paysager, concassage et transport dans le Var (83). Devis gratuit.",
+  alternates: { canonical: `${COMPANY.siteUrl}/services` },
+  openGraph: {
+    title: "Services — Concaterra Terrassement Var (83)",
+    description:
+      "Terrassement, VRD, enrochement, aménagement paysager, concassage et transport de matériaux dans le Var.",
+    url: `${COMPANY.siteUrl}/services`,
+  },
+}
+
+export default function ServicesPage() {
+  return (
+    <>
+      <Breadcrumb items={[{ label: "Nos services", href: "/services" }]} />
+
+      <div className="pt-16 md:pt-20">
+        {/* En-tête */}
+        <section className="bg-[#1C2B3A] py-16 text-white">
+          <div className="container mx-auto px-4 text-center">
+            <p className="text-[#D97706] font-semibold uppercase tracking-widest text-sm mb-3">
+              Concaterra Terrassement
+            </p>
+            <h1 className="font-barlow-condensed font-extrabold text-4xl sm:text-5xl md:text-6xl uppercase mb-4">
+              Nos prestations
+            </h1>
+            <p className="text-gray-300 max-w-2xl mx-auto text-lg">
+              Du terrassement initial à la livraison clé en main, nous prenons
+              en charge l&apos;ensemble de vos travaux publics dans le Var (83).
+            </p>
+          </div>
+        </section>
+
+        {/* Grille services */}
+        <section className="py-20 bg-[#F5F5F0]">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {SERVICES.map((service) => (
+                <Link
+                  key={service.slug}
+                  href={`/services/${service.slug}`}
+                  className="block group"
+                >
+                  <Card className="h-full border-2 border-transparent hover:border-[#D97706] transition-all duration-200">
+                    <CardHeader>
+                      <div className="text-5xl mb-3" aria-hidden="true">
+                        {service.icon}
+                      </div>
+                      <CardTitle className="font-barlow-condensed font-bold text-xl text-[#1C2B3A] uppercase group-hover:text-[#D97706] transition-colors">
+                        {service.title}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                        {service.shortDesc}
+                      </p>
+                      <p className="text-[#D97706] text-sm font-medium group-hover:underline">
+                        Découvrir →
+                      </p>
+                    </CardContent>
+                  </Card>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="py-16 bg-white border-t border-gray-100">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="font-barlow-condensed font-bold text-3xl text-[#1C2B3A] uppercase mb-4">
+              Un projet ? Obtenez votre devis gratuit
+            </h2>
+            <p className="text-gray-600 mb-6 max-w-lg mx-auto">
+              Contactez-nous pour étudier votre projet. Réponse sous 24h,
+              intervention sur tout le Var (83).
+            </p>
+            <Button
+              asChild
+              size="lg"
+              className="bg-[#D97706] hover:bg-[#B45309] text-white font-bold"
+            >
+              <Link href="/contact">Demander un devis</Link>
+            </Button>
+          </div>
+        </section>
+      </div>
+    </>
+  )
+}
