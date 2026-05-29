@@ -41,13 +41,18 @@ export default function MentionsLegalesPage() {
               Email : {COMPANY.email}
             </p>
 
+            <h2>Directeur de la publication</h2>
+            <p>
+              {COMPANY.gerant}, gérant de CONCATERRA TERRASSEMENT.
+            </p>
+
             <h2>Hébergeur</h2>
             <p>
-              <strong>Vercel Inc.</strong><br />
-              440 N Barranca Ave #4133<br />
-              Covina, CA 91723, États-Unis<br />
-              <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">
-                https://vercel.com
+              <strong>Netlify, Inc.</strong><br />
+              44 Montgomery Street, Suite 300<br />
+              San Francisco, CA 94104, États-Unis<br />
+              <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer">
+                https://www.netlify.com
               </a>
             </p>
 
@@ -75,11 +80,11 @@ export default function MentionsLegalesPage() {
 
             <h2>Données personnelles et cookies</h2>
             <p>
-              Ce site utilise un formulaire de contact permettant aux
-              utilisateurs d&apos;envoyer une demande de devis. Les données
-              transmises (nom, prénom, email, téléphone, description du projet)
-              sont utilisées exclusivement pour répondre à la demande de
-              l&apos;utilisateur et ne sont jamais transmises à des tiers à des fins
+              Le formulaire de contact utilise le service <strong>EmailJS</strong> (EmailJS Ltd,
+              opérant depuis le Royaume-Uni) pour l&apos;acheminement des messages.
+              Les données saisies (nom, email, téléphone, message) transitent via
+              ce service tiers et ne sont pas conservées par lui au-delà de la
+              transmission. Aucune donnée n&apos;est vendue ni partagée à des fins
               commerciales.
             </p>
             <p>
@@ -116,7 +121,7 @@ export default function MentionsLegalesPage() {
             </p>
 
             <p className="text-sm text-gray-500 mt-8">
-              Dernière mise à jour : janvier 2025
+              Dernière mise à jour : mai 2026
             </p>
           </div>
         </section>
