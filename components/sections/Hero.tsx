@@ -19,7 +19,7 @@ export function Hero() {
         aria-label="Renforcement de fondation micropieux Var Concaterra"
       />
       {/* Gradient overlay — plus sombre en bas pour lisibilité */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0D1B2A]/85 via-[#0D1B2A]/75 to-[#0D1B2A]/97" aria-hidden="true" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0D1B2A]/60 via-[#0D1B2A]/50 to-[#0D1B2A]/80" aria-hidden="true" />
 
       {/* Ligne décorative top */}
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97706] to-transparent" aria-hidden="true" />
@@ -36,7 +36,7 @@ export function Hero() {
         >
           <span className="w-2 h-2 rounded-full bg-[#D97706] animate-pulse" aria-hidden="true" />
           <span className="text-[#D97706] font-semibold uppercase tracking-widest text-xs">
-            Spécialiste Fondations &amp; Terrassement — Var (83)
+            Fondations &amp; Terrassement — Var (83)
           </span>
         </motion.div>
 
@@ -47,11 +47,14 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="font-barlow-condensed font-extrabold uppercase leading-[0.88] mb-5"
         >
+          <span className="block text-3xl sm:text-4xl md:text-5xl text-white/80 font-normal normal-case tracking-normal mb-2">
+            Le spécialiste du
+          </span>
           <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] text-white">
             Renforcement
           </span>
           <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] text-[#D97706]">
-            de Fondation
+            des Fondations
           </span>
           <span className="block text-2xl sm:text-3xl md:text-4xl text-white/60 mt-3 font-normal tracking-wide">
             Micropieux · Reprise en sous-œuvre · Terrassement
@@ -72,7 +75,7 @@ export function Hero() {
           ].map((item) => (
             <span
               key={item}
-              className="inline-flex items-center gap-1.5 bg-white/8 border border-white/15 rounded-full px-4 py-1.5 text-xs text-white/75"
+              className="inline-flex items-center gap-1.5 bg-white/15 border border-white/40 rounded-full px-4 py-1.5 text-xs text-white font-medium"
               dangerouslySetInnerHTML={{ __html: `<svg class="w-3 h-3 text-[#D97706] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>&nbsp;${item}` }}
             />
           ))}
@@ -112,7 +115,7 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="flex flex-wrap justify-center gap-5 text-xs text-white/45"
+          className="flex flex-wrap justify-center gap-5 text-xs text-white/80"
         >
           {[
             { Icon: Shield, text: "SIRET 882 063 712" },
