@@ -84,7 +84,7 @@ export default function HomePage() {
               {
                 Icon: Award,
                 title: "Expertise",
-                text: "Des années d'expérience dans les travaux publics et le terrassement en région PACA. Matériel professionnel et méthodes éprouvées pour chaque chantier.",
+                text: "15 ans d'expérience dans les travaux publics et le terrassement en région PACA, depuis 2011. Matériel professionnel et méthodes éprouvées pour chaque chantier.",
               },
               {
                 Icon: MapPin,

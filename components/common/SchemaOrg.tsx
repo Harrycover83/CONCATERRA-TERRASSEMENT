@@ -13,7 +13,7 @@ export function SchemaOrg() {
         url: COMPANY.siteUrl,
         telephone: COMPANY.phone,
         email: COMPANY.email,
-        foundingDate: "2020",
+        foundingDate: "2011",
         address: {
           "@type": "PostalAddress",
           streetAddress: COMPANY.address,
