@@ -60,7 +60,7 @@ export default function HomePage() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/images/chantiers/about-bg.jpg')" }}
         />
-        <div className="absolute inset-0 bg-[#0D1B2A]/40" />
+        <div className="absolute inset-0 bg-[#0D1B2A]/20" />
 
         <div className="relative z-10 container mx-auto px-4">
           <div className="text-center mb-16">
@@ -107,7 +107,7 @@ export default function HomePage() {
                 <h3 className="font-barlow-condensed font-bold text-xl text-white uppercase mb-3">
                   {title}
                 </h3>
-                <p className="text-white/60 group-hover:text-white/80 text-sm leading-relaxed transition-colors">
+                <p className="text-white text-sm leading-relaxed">
                   {text}
                 </p>
               </div>
