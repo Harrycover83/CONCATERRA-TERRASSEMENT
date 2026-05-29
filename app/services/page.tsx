@@ -4,6 +4,17 @@ import { Breadcrumb } from "@/components/common/Breadcrumb"
 import { SERVICES, COMPANY } from "@/lib/constants"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { HardHat, GitBranch, Mountain, TreePine, RefreshCcw, Truck } from "lucide-react"
+import type { LucideIcon } from "lucide-react"
+
+const SERVICE_ICONS: Record<string, LucideIcon> = {
+  "terrassement-general": HardHat,
+  "vrd-voirie-reseaux": GitBranch,
+  "enrochement": Mountain,
+  "amenagement-paysager": TreePine,
+  "concassage-recyclage": RefreshCcw,
+  "transport-materiaux": Truck,
+}
 
 export const metadata: Metadata = {
   title: "Nos services de terrassement et travaux publics dans le Var",
@@ -44,7 +55,9 @@ export default function ServicesPage() {
         <section className="py-20 bg-[#F5F5F0]">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {SERVICES.map((service) => (
+              {SERVICES.map((service) => {
+                const Icon = SERVICE_ICONS[service.slug] ?? HardHat
+                return (
                 <Link
                   key={service.slug}
                   href={`/services/${service.slug}`}
@@ -52,8 +65,8 @@ export default function ServicesPage() {
                 >
                   <Card className="h-full border-2 border-transparent hover:border-[#D97706] transition-all duration-200">
                     <CardHeader>
-                      <div className="text-5xl mb-3" aria-hidden="true">
-                        {service.icon}
+                      <div className="w-11 h-11 rounded-xl bg-[#D97706]/10 group-hover:bg-[#D97706] flex items-center justify-center mb-3 transition-colors duration-300">
+                        <Icon className="w-5 h-5 text-[#D97706] group-hover:text-white transition-colors duration-300" aria-hidden="true" />
                       </div>
                       <CardTitle className="font-barlow-condensed font-bold text-xl text-[#1C2B3A] uppercase group-hover:text-[#D97706] transition-colors">
                         {service.title}
@@ -69,7 +82,8 @@ export default function ServicesPage() {
                     </CardContent>
                   </Card>
                 </Link>
-              ))}
+                )
+              })}
             </div>
           </div>
         </section>
