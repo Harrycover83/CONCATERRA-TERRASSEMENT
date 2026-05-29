@@ -81,17 +81,24 @@ const REALISATIONS: Realisation[] = [
   },
   {
     src: "/images/chantiers/realisation-8.jpg",
-    alt: "Aménagement paysager espace vert et terrasse extérieure",
-    category: "amenagement",
-    title: "Espace vert et terrasse",
-    location: "Toulon (83)",
+    alt: "Mur d'enrochement en pierre naturelle avec ouvriers Concaterra Var",
+    category: "enrochement",
+    title: "Mur enrochement pierre naturelle",
+    location: "Var (83)",
   },
   {
     src: "/images/chantiers/realisation-9.jpg",
-    alt: "Fouilles pour fondations construction maison Gonfaron",
-    category: "terrassement",
-    title: "Fouilles fondations",
-    location: "Le Cannet-des-Maures (83)",
+    alt: "Mur de soutènement enrochement avec vue mer côte varoise",
+    category: "enrochement",
+    title: "Soutènement vue mer",
+    location: "Côte Varoise (83)",
+  },
+  {
+    src: "/images/chantiers/realisation-10.jpg",
+    alt: "Mur enrochement pierres dorées provençales avec garde-corps",
+    category: "enrochement",
+    title: "Enrochement pierres provençales",
+    location: "Var (83)",
   },
 ]
 

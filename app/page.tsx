@@ -54,19 +54,26 @@ export default function HomePage() {
       <StatsSection />
 
       {/* Section "Qui sommes-nous" */}
-      <section className="py-24 bg-white" id="qui-sommes-nous">
-        <div className="container mx-auto px-4">
+      <section className="relative py-24 overflow-hidden" id="qui-sommes-nous">
+        {/* Photo de fond */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/images/chantiers/about-bg.jpg')" }}
+        />
+        <div className="absolute inset-0 bg-[#0D1B2A]/75" />
+
+        <div className="relative z-10 container mx-auto px-4">
           <div className="text-center mb-16">
             <p className="text-[#D97706] font-semibold uppercase tracking-widest text-xs mb-3">
               À propos
             </p>
-            <h2 className="font-barlow-condensed font-bold text-4xl sm:text-5xl text-[#1C2B3A] uppercase mb-5">
+            <h2 className="font-barlow-condensed font-bold text-4xl sm:text-5xl text-white uppercase mb-5">
               Qui sommes-nous ?
             </h2>
-            <p className="text-gray-500 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-white/70 max-w-2xl mx-auto leading-relaxed">
               Concaterra Terrassement est une SARL de travaux publics basée à{" "}
-              <strong className="text-[#1C2B3A]">Gonfaron (83590)</strong>, dans le Var.
-              Spécialisés dans le <strong className="text-[#1C2B3A]">renforcement de fondation</strong> (micropieux, reprise en sous-œuvre, sinistres sécheresse)
+              <strong className="text-white">Gonfaron (83590)</strong>, dans le Var.
+              Spécialisés dans le <strong className="text-white">renforcement de fondation</strong> (micropieux, reprise en sous-œuvre, sinistres sécheresse)
               et les travaux publics (terrassement, VRD, enrochement, aménagement paysager),
               nous intervenons sur tous vos chantiers en Provence-Alpes-Côte d&apos;Azur.
             </p>
@@ -92,15 +99,15 @@ export default function HomePage() {
             ].map(({ Icon, title, text }) => (
               <div
                 key={title}
-                className="group relative bg-[#F8F9FA] hover:bg-[#1C2B3A] rounded-2xl p-8 transition-all duration-300"
+                className="group relative bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-[#D97706]/50 rounded-2xl p-8 transition-all duration-300"
               >
-                <div className="w-12 h-12 rounded-xl bg-[#D97706]/10 group-hover:bg-[#D97706]/20 flex items-center justify-center mb-5 transition-colors">
+                <div className="w-12 h-12 rounded-xl bg-[#D97706]/20 group-hover:bg-[#D97706]/40 flex items-center justify-center mb-5 transition-colors">
                   <Icon className="w-6 h-6 text-[#D97706]" aria-hidden="true" />
                 </div>
-                <h3 className="font-barlow-condensed font-bold text-xl text-[#1C2B3A] group-hover:text-white uppercase mb-3 transition-colors">
+                <h3 className="font-barlow-condensed font-bold text-xl text-white uppercase mb-3">
                   {title}
                 </h3>
-                <p className="text-gray-500 group-hover:text-white/60 text-sm leading-relaxed transition-colors">
+                <p className="text-white/60 group-hover:text-white/80 text-sm leading-relaxed transition-colors">
                   {text}
                 </p>
               </div>

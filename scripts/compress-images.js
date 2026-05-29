@@ -30,14 +30,32 @@ const TASKS = [
     fit: 'cover',
     quality: 85,
   },
+  // Section "Qui sommes-nous" background
+  {
+    input: 'about-bg-raw.jpg',
+    output: 'about-bg.jpg',
+    width: 1920,
+    height: 1080,
+    fit: 'cover',
+    quality: 85,
+  },
   // Réalisations — max 1200px wide
-  ...['1','2','3','4','5','6','7'].map(n => ({
+  ...['1','2','3','4','5','6','7','8','9','10'].map(n => ({
     input: `realisation-${n}-raw.jpg`,
     output: `realisation-${n}.jpg`,
     width: 1200,
     height: null,
     fit: 'inside',
     quality: 80,
+  })),
+  // Blog covers — format 800x450 (16/9)
+  ...['maison-fissuree','micropieux','sinistre','sous-oeuvre','rga','chantier','vrd','prix'].map(slug => ({
+    input: `blog-${slug}-raw.jpg`,
+    output: `blog-${slug}.jpg`,
+    width: 800,
+    height: 450,
+    fit: 'cover',
+    quality: 82,
   })),
 ];
 

@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import { Breadcrumb } from "@/components/common/Breadcrumb"
 import { Badge } from "@/components/ui/badge"
@@ -56,11 +57,23 @@ export default function BlogPage() {
               {BLOG_POSTS.map((post) => (
                 <article
                   key={post.slug}
-                  className="bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition-shadow flex flex-col"
+                  className="group bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-md transition-shadow flex flex-col"
                 >
-                  <div className="bg-[#1C2B3A] h-40 flex items-center justify-center px-6">
-                    <span className="text-5xl" aria-hidden="true">🏗️</span>
-                  </div>
+                  {post.image ? (
+                    <Link href={`/blog/${post.slug}`} className="relative block h-48 overflow-hidden">
+                      <Image
+                        src={post.image}
+                        alt={post.title}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      />
+                    </Link>
+                  ) : (
+                    <div className="bg-[#1C2B3A] h-48 flex items-center justify-center px-6">
+                      <span className="text-5xl" aria-hidden="true">🏗️</span>
+                    </div>
+                  )}
                   <div className="p-6 flex flex-col flex-1">
                     <div className="flex flex-wrap gap-2 mb-3">
                       {post.tags.slice(0, 2).map((tag) => (

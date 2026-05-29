@@ -6,6 +6,7 @@ export interface BlogPost {
   category: string
   readingTime: string
   tags: string[]
+  image?: string
   content: string
 }
 
@@ -20,6 +21,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Fondations",
     readingTime: "8 min de lecture",
     tags: ["Fissures", "Fondations", "Var"],
+    image: "/images/chantiers/blog-maison-fissuree.jpg",
     content: `## Ma maison se fissure dans le Var : quelles causes et quelles solutions ?
 
 Les fissures dans les maisons sont un phénomène courant dans le Var et plus généralement en région PACA. Le département figure parmi les zones les plus exposées au **retrait-gonflement des argiles (RGA)**, phénomène climatique qui provoque des mouvements du sol sous les fondations. Si certaines fissures sont bénignes, d'autres signalent un problème structurel grave qui nécessite une intervention rapide.
@@ -117,6 +119,7 @@ Basée à Gonfaron (83590), l'entreprise Concaterra Terrassement intervient dans
     category: "Fondations",
     readingTime: "7 min de lecture",
     tags: ["Micropieux", "Fondations", "Technique"],
+    image: "/images/chantiers/blog-micropieux.jpg",
     content: `## Micropieux : la solution moderne pour renforcer les fondations dans le Var
 
 Lorsque les fondations d'une maison sont fragilisées par les mouvements du sol, une sécheresse ou un tassement différentiel, la démolition et reconstruction ne sont pas l'unique option. Les **micropieux** permettent de renforcer les fondations existantes de manière durable, rapide et sans nécessiter le départ des occupants.
@@ -233,6 +236,7 @@ Basée à Gonfaron (83590), notre entreprise réalise des chantiers de renforcem
     category: "Assurance",
     readingTime: "9 min de lecture",
     tags: ["Cat Nat", "Sécheresse", "Assurance"],
+    image: "/images/chantiers/blog-sinistre.jpg",
     content: `## Sécheresse, fissures et Cat Nat : le guide complet pour les propriétaires du Var
 
 La sécheresse de 2022 a été la plus destructrice de l'histoire en France pour les fondations : **2,5 milliards d'euros** d'indemnisations Cat Nat, des dizaines de milliers de maisons fissurées, et des délais d'instruction qui s'étendent sur des années. Dans le Var, plusieurs arrêtés de catastrophe naturelle ont été publiés ces dernières années, couvrant les communes sinistrées.
@@ -345,6 +349,7 @@ Intervenant dans tout le Var depuis Gonfaron (83590), Concaterra Terrassement vo
     category: "Fondations",
     readingTime: "8 min de lecture",
     tags: ["Reprise en sous-œuvre", "Fondations", "Technique"],
+    image: "/images/chantiers/blog-sous-oeuvre.jpg",
     content: `## Reprise en sous-œuvre : renforcer les fondations sans démolir
 
 La **reprise en sous-œuvre** est une technique de génie civil qui consiste à renforcer ou remplacer les fondations existantes d'un bâtiment **sans le démolir**. Elle est utilisée lorsque les fondations d'origine sont insuffisantes ou lorsqu'elles ont été fragilisées par des phénomènes naturels (sécheresse, tassement, érosion) ou des modifications du bâtiment (surcharge, extension).
@@ -458,6 +463,7 @@ Basée à Gonfaron (83590), Concaterra Terrassement intervient pour les travaux 
     category: "Fondations",
     readingTime: "8 min de lecture",
     tags: ["RGA", "Fondations", "Prévention"],
+    image: "/images/chantiers/blog-rga.jpg",
     content: `## Retrait-Gonflement des Argiles dans le Var : tout comprendre pour protéger votre maison
 
 Le **Retrait-Gonflement des Argiles (RGA)** est le phénomène naturel le plus coûteux pour les assurances en France, devant les inondations. Avec la succession de sécheresses intenses depuis 2018, il est devenu un enjeu majeur pour les propriétaires du Var.
@@ -580,6 +586,7 @@ Depuis Gonfaron (83590), au cœur du Var, Concaterra Terrassement intervient pou
     category: "Conseils",
     readingTime: "5 min de lecture",
     tags: ["Terrassement", "Chantier", "Conseils"],
+    image: "/images/chantiers/blog-chantier.jpg",
     content: `
 ## Les grandes étapes d'un chantier de terrassement
 
@@ -641,6 +648,7 @@ Un terrassement mal réalisé peut avoir des conséquences graves : fondations i
     category: "Prix & Budgets",
     readingTime: "7 min de lecture",
     tags: ["Terrassement", "Prix", "PACA"],
+    image: "/images/chantiers/blog-prix.jpg",
     content: `
 ## Prix du terrassement en Provence-Alpes-Côte d'Azur en 2025
 
@@ -704,6 +712,7 @@ Concaterra Terrassement est basé à Gonfaron (83590). Nos tarifs intègrent des
     category: "VRD",
     readingTime: "6 min de lecture",
     tags: ["VRD", "Var", "Réseaux"],
+    image: "/images/chantiers/blog-vrd.jpg",
     content: `
 ## VRD dans le Var : l'importance du local
 

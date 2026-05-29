@@ -19,7 +19,7 @@ export function Hero() {
         aria-label="Renforcement de fondation micropieux Var Concaterra"
       />
       {/* Gradient overlay — plus sombre en bas pour lisibilité */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0D1B2A]/60 via-[#0D1B2A]/50 to-[#0D1B2A]/80" aria-hidden="true" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0D1B2A]/20 via-[#0D1B2A]/15 to-[#0D1B2A]/50" aria-hidden="true" />
 
       {/* Ligne décorative top */}
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97706] to-transparent" aria-hidden="true" />
@@ -32,7 +32,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2 bg-[#D97706]/15 border border-[#D97706]/40 rounded-full px-5 py-2 mb-6"
+          className="inline-flex items-center gap-2 bg-black/50 backdrop-blur-sm border border-[#D97706]/60 rounded-full px-5 py-2 mb-6"
         >
           <span className="w-2 h-2 rounded-full bg-[#D97706] animate-pulse" aria-hidden="true" />
           <span className="text-[#D97706] font-semibold uppercase tracking-widest text-xs">
@@ -47,7 +47,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="font-barlow-condensed font-extrabold uppercase leading-[0.88] mb-5"
         >
-          <span className="block text-3xl sm:text-4xl md:text-5xl text-white/80 font-normal normal-case tracking-normal mb-2">
+          <span className="block text-3xl sm:text-4xl md:text-5xl text-white font-normal normal-case tracking-normal mb-2" style={{textShadow:'0 1px 6px rgba(0,0,0,0.7)'}}>
             Le spécialiste du
           </span>
           <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] text-white">
@@ -56,7 +56,7 @@ export function Hero() {
           <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] text-[#D97706]">
             des Fondations
           </span>
-          <span className="block text-2xl sm:text-3xl md:text-4xl text-white/60 mt-3 font-normal tracking-wide">
+          <span className="block text-2xl sm:text-3xl md:text-4xl text-white mt-3 font-normal tracking-wide" style={{textShadow:'0 1px 6px rgba(0,0,0,0.8)'}}>
             Micropieux · Reprise en sous-œuvre · Terrassement
           </span>
         </motion.h1>
