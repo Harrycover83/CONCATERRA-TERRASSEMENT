@@ -27,13 +27,16 @@ export function Navbar() {
   const navLinks = [
     { href: "/", label: "Accueil" },
     { href: "/services", label: "Services" },
+    { href: "/#qui-sommes-nous", label: "Qui sommes-nous" },
     { href: "/realisations", label: "Réalisations" },
     { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
   ]
 
-  const isActive = (href: string) =>
-    href === "/" ? pathname === "/" : pathname.startsWith(href)
+  const isActive = (href: string) => {
+    if (href.includes("#")) return false
+    return href === "/" ? pathname === "/" : pathname.startsWith(href)
+  }
 
   return (
     <header
