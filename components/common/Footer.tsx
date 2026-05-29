@@ -5,20 +5,20 @@ export function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="bg-[#1C2B3A] text-gray-300 pt-12 pb-6">
+    <footer className="bg-[#1A3020] text-gray-300 pt-12 pb-6">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
           {/* Colonne 1 — Entreprise */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <span className="flex items-center justify-center w-9 h-9 rounded bg-[#D97706] text-white font-bold text-sm select-none">
+              <span className="flex items-center justify-center w-9 h-9 rounded bg-[#D42020] text-white font-bold text-sm select-none">
                 CT
               </span>
               <div>
                 <p className="text-white font-bold text-sm uppercase tracking-wide">
                   Concaterra
                 </p>
-                <p className="text-[#D97706] text-xs uppercase tracking-widest">
+                <p className="text-[#D42020] text-xs uppercase tracking-widest">
                   Terrassement
                 </p>
               </div>
@@ -44,7 +44,7 @@ export function Footer() {
                 <li key={s.slug}>
                   <Link
                     href={`/services/${s.slug}`}
-                    className="text-sm hover:text-[#D97706] transition-colors"
+                    className="text-sm hover:text-[#D42020] transition-colors"
                   >
                     {s.title}
                   </Link>
@@ -68,31 +68,31 @@ export function Footer() {
             <div className="mt-4 space-y-1">
               <Link
                 href="/terrassement-toulon"
-                className="block text-sm hover:text-[#D97706] transition-colors"
+                className="block text-sm hover:text-[#D42020] transition-colors"
               >
                 Terrassement Toulon
               </Link>
               <Link
                 href="/terrassement-draguignan"
-                className="block text-sm hover:text-[#D97706] transition-colors"
+                className="block text-sm hover:text-[#D42020] transition-colors"
               >
                 Terrassement Draguignan
               </Link>
               <Link
                 href="/terrassement-brignoles"
-                className="block text-sm hover:text-[#D97706] transition-colors"
+                className="block text-sm hover:text-[#D42020] transition-colors"
               >
                 Terrassement Brignoles
               </Link>
               <Link
                 href="/terrassement-hyeres"
-                className="block text-sm hover:text-[#D97706] transition-colors"
+                className="block text-sm hover:text-[#D42020] transition-colors"
               >
                 Terrassement Hyères
               </Link>
               <Link
                 href="/terrassement-le-luc"
-                className="block text-sm hover:text-[#D97706] transition-colors"
+                className="block text-sm hover:text-[#D42020] transition-colors"
               >
                 Terrassement Le Luc
               </Link>
@@ -115,7 +115,7 @@ export function Footer() {
               <p>
                 <a
                   href={`tel:${COMPANY.phone}`}
-                  className="hover:text-[#D97706] transition-colors font-medium text-white"
+                  className="hover:text-[#D42020] transition-colors font-medium text-white"
                 >
                   {COMPANY.phoneFormatted}
                 </a>
@@ -123,7 +123,7 @@ export function Footer() {
               <p>
                 <a
                   href={`mailto:${COMPANY.email}`}
-                  className="hover:text-[#D97706] transition-colors"
+                  className="hover:text-[#D42020] transition-colors"
                 >
                   {COMPANY.email}
                 </a>
@@ -141,16 +141,16 @@ export function Footer() {
           <div className="flex items-center gap-4">
             <Link
               href="/mentions-legales"
-              className="hover:text-[#D97706] transition-colors"
+              className="hover:text-[#D42020] transition-colors"
             >
               Mentions légales
             </Link>
-            <Link href="/blog" className="hover:text-[#D97706] transition-colors">
+            <Link href="/blog" className="hover:text-[#D42020] transition-colors">
               Blog
             </Link>
             <Link
               href="/contact"
-              className="hover:text-[#D97706] transition-colors"
+              className="hover:text-[#D42020] transition-colors"
             >
               Contact
             </Link>

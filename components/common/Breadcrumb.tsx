@@ -50,13 +50,13 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
               )}
               <li>
                 {index === allItems.length - 1 ? (
-                  <span className="text-[#D97706] font-medium" aria-current="page">
+                  <span className="text-[#D42020] font-medium" aria-current="page">
                     {item.label}
                   </span>
                 ) : (
                   <Link
                     href={item.href}
-                    className="hover:text-[#D97706] transition-colors"
+                    className="hover:text-[#D42020] transition-colors"
                   >
                     {item.label}
                   </Link>

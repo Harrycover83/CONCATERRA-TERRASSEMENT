@@ -35,7 +35,7 @@ export default function TerrassementBrignolesPage() {
       intro="Concaterra Terrassement intervient à Brignoles et dans le centre-Var pour vos travaux de terrassement, VRD et enrochement. Devis gratuit sous 24h."
       specificContent={
         <div className="space-y-6 text-gray-700 leading-relaxed">
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             Terrassement à Brignoles et dans le centre-Var
           </h2>
           <p>
@@ -51,7 +51,7 @@ export default function TerrassementBrignolesPage() {
             kilomètres. Nous sommes l&apos;interlocuteur de proximité pour
             vos projets de terrassement dans le 83.
           </p>
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             Zones d&apos;intervention autour de Brignoles
           </h2>
           <p>

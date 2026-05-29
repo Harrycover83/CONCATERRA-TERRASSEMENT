@@ -106,8 +106,8 @@ function RealisationCard({ r }: { r: Realisation }) {
   const [error, setError] = useState(false)
   if (error) {
     return (
-      <div className="relative aspect-[4/3] bg-[#1C2B3A] flex flex-col items-center justify-center gap-2">
-        <Camera className="w-8 h-8 text-[#D97706]/40" />
+      <div className="relative aspect-[4/3] bg-[#1A3020] flex flex-col items-center justify-center gap-2">
+        <Camera className="w-8 h-8 text-[#D42020]/40" />
         <span className="text-white/30 text-xs uppercase tracking-widest font-medium">
           {r.title}
         </span>
@@ -155,9 +155,9 @@ export function RealisationsClient() {
 
       <div className="pt-16 md:pt-20">
         {/* Hero */}
-        <section className="bg-[#1C2B3A] py-16 text-white">
+        <section className="bg-[#1A3020] py-16 text-white">
           <div className="container mx-auto px-4">
-            <p className="text-[#D97706] font-semibold uppercase tracking-widest text-sm mb-3">
+            <p className="text-[#D42020] font-semibold uppercase tracking-widest text-sm mb-3">
               Chantiers réalisés dans le Var
             </p>
             <h1 className="font-barlow-condensed font-extrabold text-4xl sm:text-5xl uppercase mb-4">
@@ -185,7 +185,7 @@ export function RealisationsClient() {
                     <TabsTrigger
                       key={cat.value}
                       value={cat.value}
-                      className="data-[state=active]:bg-[#D97706] data-[state=active]:text-white"
+                      className="data-[state=active]:bg-[#D42020] data-[state=active]:text-white"
                     >
                       {cat.label}
                     </TabsTrigger>
@@ -212,7 +212,7 @@ export function RealisationsClient() {
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex flex-col justify-end p-3 opacity-0 group-hover:opacity-100">
                     <Badge
-                      className="w-fit mb-1 bg-[#D97706] text-white border-none text-xs"
+                      className="w-fit mb-1 bg-[#D42020] text-white border-none text-xs"
                     >
                       {categoryLabel(r.category)}
                     </Badge>
@@ -234,14 +234,14 @@ export function RealisationsClient() {
         </section>
 
         {/* CTA */}
-        <section className="py-12 bg-[#D97706]">
+        <section className="py-12 bg-[#D42020]">
           <div className="container mx-auto px-4 text-center">
             <p className="text-white font-barlow-condensed font-bold text-2xl uppercase mb-4">
               Votre chantier pourrait figurer ici
             </p>
             <a
               href="/contact"
-              className="inline-block bg-white text-[#D97706] font-bold px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors"
+              className="inline-block bg-white text-[#D42020] font-bold px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors"
             >
               Demander un devis gratuit
             </a>

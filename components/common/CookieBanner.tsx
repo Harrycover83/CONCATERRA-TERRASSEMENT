@@ -23,7 +23,7 @@ export function CookieBanner() {
       role="alertdialog"
       aria-modal="false"
       aria-label="Politique de cookies"
-      className="fixed bottom-0 left-0 right-0 z-50 bg-[#1C2B3A] border-t border-white/10 p-4"
+      className="fixed bottom-0 left-0 right-0 z-50 bg-[#1A3020] border-t border-white/10 p-4"
     >
       <div className="container mx-auto flex flex-col sm:flex-row items-start sm:items-center gap-4">
         <p className="text-sm text-gray-300 flex-1">
@@ -31,14 +31,14 @@ export function CookieBanner() {
           Seuls des cookies fonctionnels essentiels sont utilisés.{" "}
           <a
             href="/mentions-legales"
-            className="underline hover:text-[#D97706]"
+            className="underline hover:text-[#D42020]"
           >
             En savoir plus
           </a>
         </p>
         <Button
           onClick={accept}
-          className="bg-[#D97706] hover:bg-[#B45309] text-white whitespace-nowrap"
+          className="bg-[#D42020] hover:bg-[#B01A1A] text-white whitespace-nowrap"
           size="sm"
         >
           J&apos;accepte

@@ -79,13 +79,13 @@ export default async function BlogArticlePage({ params }: Props) {
 
       <div className="pt-16 md:pt-20">
         {/* Hero article */}
-        <section className="bg-[#1C2B3A] py-16 text-white">
+        <section className="bg-[#1A3020] py-16 text-white">
           <div className="container mx-auto px-4 max-w-4xl">
             <div className="flex flex-wrap gap-2 mb-4">
               {post.tags.slice(0, 3).map((tag) => (
                 <Badge
                   key={tag}
-                  className="bg-[#D97706] text-white border-none text-xs"
+                  className="bg-[#D42020] text-white border-none text-xs"
                 >
                   {tag}
                 </Badge>
@@ -112,13 +112,13 @@ export default async function BlogArticlePage({ params }: Props) {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               {/* Article */}
               <article
-                className="lg:col-span-2 prose prose-slate max-w-none prose-headings:font-barlow-condensed prose-headings:uppercase prose-h2:text-2xl prose-h3:text-xl prose-a:text-[#D97706]"
+                className="lg:col-span-2 prose prose-slate max-w-none prose-headings:font-barlow-condensed prose-headings:uppercase prose-h2:text-2xl prose-h3:text-xl prose-a:text-[#D42020]"
                 dangerouslySetInnerHTML={{ __html: htmlContent }}
               />
 
               {/* Sidebar */}
               <aside className="space-y-6">
-                <div className="bg-[#D97706] rounded-2xl p-6 text-white">
+                <div className="bg-[#D42020] rounded-2xl p-6 text-white">
                   <p className="font-barlow-condensed font-bold text-xl uppercase mb-2">
                     Besoin d&apos;un devis ?
                   </p>
@@ -128,14 +128,14 @@ export default async function BlogArticlePage({ params }: Props) {
                   </p>
                   <Button
                     asChild
-                    className="bg-white text-[#D97706] hover:bg-gray-100 font-bold w-full"
+                    className="bg-white text-[#D42020] hover:bg-gray-100 font-bold w-full"
                   >
                     <Link href="/contact">Demander un devis</Link>
                   </Button>
                 </div>
 
                 <div className="bg-gray-50 rounded-2xl p-6">
-                  <p className="font-semibold text-[#1C2B3A] mb-3">
+                  <p className="font-semibold text-[#1A3020] mb-3">
                     Autres articles
                   </p>
                   <ul className="space-y-3">
@@ -143,7 +143,7 @@ export default async function BlogArticlePage({ params }: Props) {
                       <li key={other.slug}>
                         <Link
                           href={`/blog/${other.slug}`}
-                          className="text-sm text-gray-700 hover:text-[#D97706] transition-colors line-clamp-2"
+                          className="text-sm text-gray-700 hover:text-[#D42020] transition-colors line-clamp-2"
                         >
                           {other.title}
                         </Link>

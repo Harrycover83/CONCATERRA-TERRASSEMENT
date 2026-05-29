@@ -36,9 +36,9 @@ export default function BlogPage() {
 
       <div className="pt-16 md:pt-20">
         {/* Hero */}
-        <section className="bg-[#1C2B3A] py-16 text-white">
+        <section className="bg-[#1A3020] py-16 text-white">
           <div className="container mx-auto px-4">
-            <p className="text-[#D97706] font-semibold uppercase tracking-widest text-sm mb-3">
+            <p className="text-[#D42020] font-semibold uppercase tracking-widest text-sm mb-3">
               Fondations · Terrassement · Assurance
             </p>
             <h1 className="font-barlow-condensed font-extrabold text-4xl sm:text-5xl uppercase mb-4">
@@ -70,7 +70,7 @@ export default function BlogPage() {
                       />
                     </Link>
                   ) : (
-                    <div className="bg-[#1C2B3A] h-48 flex items-center justify-center px-6">
+                    <div className="bg-[#1A3020] h-48 flex items-center justify-center px-6">
                       <span className="text-5xl" aria-hidden="true">🏗️</span>
                     </div>
                   )}
@@ -79,16 +79,16 @@ export default function BlogPage() {
                       {post.tags.slice(0, 2).map((tag) => (
                         <Badge
                           key={tag}
-                          className="bg-[#D97706]/10 text-[#D97706] border border-[#D97706]/30 text-xs font-normal"
+                          className="bg-[#D42020]/10 text-[#D42020] border border-[#D42020]/30 text-xs font-normal"
                         >
                           {tag}
                         </Badge>
                       ))}
                     </div>
-                    <h2 className="font-barlow-condensed font-bold text-xl text-[#1C2B3A] mb-3 leading-tight line-clamp-3">
+                    <h2 className="font-barlow-condensed font-bold text-xl text-[#1A3020] mb-3 leading-tight line-clamp-3">
                       <Link
                         href={`/blog/${post.slug}`}
-                        className="hover:text-[#D97706] transition-colors"
+                        className="hover:text-[#D42020] transition-colors"
                       >
                         {post.title}
                       </Link>
@@ -107,7 +107,7 @@ export default function BlogPage() {
                     </p>
                     <Link
                       href={`/blog/${post.slug}`}
-                      className="mt-4 inline-block text-[#D97706] font-semibold text-sm hover:underline"
+                      className="mt-4 inline-block text-[#D42020] font-semibold text-sm hover:underline"
                       aria-label={`Lire l'article : ${post.title}`}
                     >
                       Lire l&apos;article →

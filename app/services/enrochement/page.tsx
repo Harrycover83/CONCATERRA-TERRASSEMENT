@@ -83,7 +83,7 @@ export default function EnrochementPage() {
       ]}
       content={
         <div className="space-y-6 text-gray-700 leading-relaxed">
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             L&apos;enrochement : technique et esthétique pour sécuriser vos terrains
           </h2>
           <p>
@@ -103,7 +103,7 @@ export default function EnrochementPage() {
             gabions design, en passant par les perrés maçonnés traditionnels.
           </p>
 
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             Quand l&apos;enrochement est-il nécessaire ?
           </h2>
           <p>
@@ -129,7 +129,7 @@ export default function EnrochementPage() {
             </li>
           </ul>
 
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             Enrochement dans le Var : pourquoi choisir un professionnel local
           </h2>
           <p>

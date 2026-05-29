@@ -39,7 +39,7 @@ function Counter({ target, suffix }: { target: number; suffix: string }) {
 
 export function StatsSection() {
   return (
-    <section className="bg-[#1C2B3A] border-t border-b border-white/5" aria-label="Chiffres clés">
+    <section className="bg-[#1A3020] border-t border-b border-white/5" aria-label="Chiffres clés">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-white/10">
           {STATS.map((stat) => (
@@ -47,7 +47,7 @@ export function StatsSection() {
               key={stat.label}
               className="flex flex-col items-center justify-center py-10 px-4 text-center"
             >
-              <span className="font-barlow-condensed font-extrabold text-4xl sm:text-5xl text-[#D97706]">
+              <span className="font-barlow-condensed font-extrabold text-4xl sm:text-5xl text-[#D42020]">
                 <Counter target={stat.value} suffix={stat.suffix} />
               </span>
               <span className="text-white/50 text-sm mt-1 uppercase tracking-wide">

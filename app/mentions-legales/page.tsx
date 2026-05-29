@@ -18,7 +18,7 @@ export default function MentionsLegalesPage() {
       <Breadcrumb items={[{ label: "Mentions légales", href: "/mentions-legales" }]} />
 
       <div className="pt-16 md:pt-20">
-        <section className="bg-[#1C2B3A] py-12 text-white">
+        <section className="bg-[#1A3020] py-12 text-white">
           <div className="container mx-auto px-4">
             <h1 className="font-barlow-condensed font-extrabold text-3xl sm:text-4xl uppercase">
               Mentions légales

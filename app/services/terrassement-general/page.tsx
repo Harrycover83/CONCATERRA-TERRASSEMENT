@@ -83,7 +83,7 @@ export default function TerrassementGeneralPage() {
       ]}
       content={
         <div className="space-y-6 text-gray-700 leading-relaxed">
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             Le terrassement général : la base de tout projet de construction
           </h2>
           <p>
@@ -101,7 +101,7 @@ export default function TerrassementGeneralPage() {
             différentes natures de sol rencontrées en Provence.
           </p>
 
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             Les étapes d&apos;un terrassement général réussi
           </h2>
           <p>
@@ -124,7 +124,7 @@ export default function TerrassementGeneralPage() {
             le terrain pour les travaux suivants (fondations, VRD, etc.).
           </p>
 
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             Terrassement dans le Var : des contraintes spécifiques
           </h2>
           <p>
@@ -141,7 +141,7 @@ export default function TerrassementGeneralPage() {
             chantier, et gestion des terres excavées selon les filières agréées.
           </p>
 
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             Terrassement pour particuliers et professionnels
           </h2>
           <p>

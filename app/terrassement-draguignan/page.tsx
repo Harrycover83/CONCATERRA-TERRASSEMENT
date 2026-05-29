@@ -35,7 +35,7 @@ export default function TerrassementDraguignanPage() {
       intro="Entreprise de terrassement et travaux publics au service des particuliers et professionnels à Draguignan. Terrassement, VRD, enrochement : devis gratuit sous 24h."
       specificContent={
         <div className="space-y-6 text-gray-700 leading-relaxed">
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             Terrassement à Draguignan et dans le Haut-Var
           </h2>
           <p>
@@ -51,7 +51,7 @@ export default function TerrassementDraguignanPage() {
             des chantiers de toutes tailles, avec un délai d&apos;intervention
             rapide et un devis sous 24h.
           </p>
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             Zones d&apos;intervention autour de Draguignan
           </h2>
           <p>

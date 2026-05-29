@@ -8,7 +8,7 @@ import { Phone, FileText, ChevronDown, Shield, Clock, MapPin, CheckCircle } from
 export function Hero() {
   return (
     <section
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-[#0D1B2A]"
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-[#0F1A0F]"
       aria-label="Section principale"
     >
       {/* Photo de fond */}
@@ -19,10 +19,10 @@ export function Hero() {
         aria-label="Renforcement de fondation micropieux Var Concaterra"
       />
       {/* Gradient overlay — plus sombre en bas pour lisibilité */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0D1B2A]/20 via-[#0D1B2A]/15 to-[#0D1B2A]/50" aria-hidden="true" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0F1A0F]/20 via-[#0F1A0F]/15 to-[#0F1A0F]/50" aria-hidden="true" />
 
       {/* Ligne décorative top */}
-      <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97706] to-transparent" aria-hidden="true" />
+      <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D42020] to-transparent" aria-hidden="true" />
 
       {/* Contenu */}
       <div className="relative z-10 container mx-auto px-4 text-center text-white pt-20">
@@ -32,10 +32,10 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2 bg-black/50 backdrop-blur-sm border border-[#D97706]/60 rounded-full px-5 py-2 mb-6"
+          className="inline-flex items-center gap-2 bg-black/50 backdrop-blur-sm border border-[#D42020]/60 rounded-full px-5 py-2 mb-6"
         >
-          <span className="w-2 h-2 rounded-full bg-[#D97706] animate-pulse" aria-hidden="true" />
-          <span className="text-[#D97706] font-semibold uppercase tracking-widest text-xs">
+          <span className="w-2 h-2 rounded-full bg-[#D42020] animate-pulse" aria-hidden="true" />
+          <span className="text-[#D42020] font-semibold uppercase tracking-widest text-xs">
             Fondations &amp; Terrassement — Var (83)
           </span>
         </motion.div>
@@ -53,7 +53,7 @@ export function Hero() {
           <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] text-white">
             Renforcement
           </span>
-          <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] text-[#D97706]">
+          <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] text-[#D42020]">
             des Fondations
           </span>
           <span className="block text-2xl sm:text-3xl md:text-4xl text-white mt-3 font-normal tracking-wide" style={{textShadow:'0 1px 6px rgba(0,0,0,0.8)'}}>
@@ -76,7 +76,7 @@ export function Hero() {
             <span
               key={item}
               className="inline-flex items-center gap-1.5 bg-white/15 border border-white/40 rounded-full px-4 py-1.5 text-xs text-white font-medium"
-              dangerouslySetInnerHTML={{ __html: `<svg class="w-3 h-3 text-[#D97706] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>&nbsp;${item}` }}
+              dangerouslySetInnerHTML={{ __html: `<svg class="w-3 h-3 text-[#D42020] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>&nbsp;${item}` }}
             />
           ))}
         </motion.div>
@@ -91,7 +91,7 @@ export function Hero() {
           <Button
             asChild
             size="lg"
-            className="bg-[#D97706] hover:bg-[#B45309] text-white font-bold text-base px-8 h-13 shadow-xl shadow-[#D97706]/25"
+            className="bg-[#D42020] hover:bg-[#B01A1A] text-white font-bold text-base px-8 h-13 shadow-xl shadow-[#D42020]/25"
           >
             <Link href="/contact">
               <FileText className="w-4 h-4 mr-2" aria-hidden="true" />
@@ -124,7 +124,7 @@ export function Hero() {
             { Icon: CheckCircle, text: "Garantie décennale" },
           ].map(({ Icon, text }) => (
             <span key={text} className="flex items-center gap-1.5">
-              <Icon className="w-3.5 h-3.5 text-[#D97706]" aria-hidden="true" />
+              <Icon className="w-3.5 h-3.5 text-[#D42020]" aria-hidden="true" />
               {text}
             </span>
           ))}

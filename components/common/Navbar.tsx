@@ -39,8 +39,8 @@ export function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#1C2B3A] shadow-lg"
-          : "bg-[#1C2B3A]/95 backdrop-blur-sm"
+          ? "bg-[#1A3020] shadow-lg"
+          : "bg-[#1A3020]/95 backdrop-blur-sm"
       }`}
     >
       <div className="container mx-auto px-4">
@@ -65,7 +65,7 @@ export function Navbar() {
                 href={link.href}
                 className={`text-sm font-medium transition-colors ${
                   isActive(link.href)
-                    ? "text-[#D97706]"
+                    ? "text-[#D42020]"
                     : "text-gray-300 hover:text-white"
                 }`}
               >
@@ -78,7 +78,7 @@ export function Navbar() {
           <div className="flex items-center gap-3">
             <Button
               asChild
-              className="hidden md:inline-flex bg-[#D97706] hover:bg-[#B45309] text-white font-semibold"
+              className="hidden md:inline-flex bg-[#D42020] hover:bg-[#B01A1A] text-white font-semibold"
               size="sm"
             >
               <Link href="/contact">Devis gratuit</Link>
@@ -90,7 +90,7 @@ export function Navbar() {
               aria-label={menuOpen ? "Fermer le menu" : "Ouvrir le menu"}
               aria-expanded={menuOpen}
               aria-controls="mobile-menu"
-              className="md:hidden p-2 text-white focus-visible:outline-2 focus-visible:outline-[#D97706] rounded"
+              className="md:hidden p-2 text-white focus-visible:outline-2 focus-visible:outline-[#D42020] rounded"
               onClick={() => setMenuOpen((v) => !v)}
             >
               <span className="sr-only">{menuOpen ? "Fermer le menu" : "Ouvrir le menu"}</span>
@@ -130,7 +130,7 @@ export function Navbar() {
             aria-hidden={!menuOpen}
           >
             <nav
-              className="bg-[#1C2B3A] border-t border-white/10 px-4 py-4 flex flex-col gap-1"
+              className="bg-[#1A3020] border-t border-white/10 px-4 py-4 flex flex-col gap-1"
               aria-label="Navigation mobile"
             >
               {navLinks.map((link, i) => (
@@ -144,7 +144,7 @@ export function Navbar() {
                     href={link.href}
                     className={`block py-2.5 px-3 rounded text-sm font-medium transition-colors ${
                       isActive(link.href)
-                        ? "text-[#D97706] bg-white/5"
+                        ? "text-[#D42020] bg-white/5"
                         : "text-gray-300 hover:text-white hover:bg-white/5"
                     }`}
                   >
@@ -160,7 +160,7 @@ export function Navbar() {
               >
                 <Button
                   asChild
-                  className="w-full bg-[#D97706] hover:bg-[#B45309] text-white font-semibold"
+                  className="w-full bg-[#D42020] hover:bg-[#B01A1A] text-white font-semibold"
                 >
                   <Link href="/contact">Demander un devis gratuit</Link>
                 </Button>

@@ -54,10 +54,10 @@ const itemVariants = {
 
 export function FondationsSection() {
   return (
-    <section className="py-20 bg-[#0D1B2A] relative overflow-hidden" id="fondations">
+    <section className="py-20 bg-[#0F1A0F] relative overflow-hidden" id="fondations">
       {/* Ligne décorative haut */}
       <div
-        className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97706] to-transparent"
+        className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D42020] to-transparent"
         aria-hidden="true"
       />
       <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-white/5" aria-hidden="true" />
@@ -71,12 +71,12 @@ export function FondationsSection() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.65, ease: "easeOut" }}
         >
-          <p className="text-[#D97706] font-semibold uppercase tracking-widest text-xs mb-3">
+          <p className="text-[#D42020] font-semibold uppercase tracking-widest text-xs mb-3">
             Notre cœur de métier
           </p>
           <h2 className="font-barlow-condensed font-extrabold text-4xl sm:text-5xl md:text-6xl text-white uppercase mb-5 leading-tight">
             Votre maison se fissure ?<br />
-            <span className="text-[#D97706]">On intervient.</span>
+            <span className="text-[#D42020]">On intervient.</span>
           </h2>
           <p className="text-white/55 max-w-2xl mx-auto text-base leading-relaxed">
             Sécheresse, tassement différentiel, sol argileux — les fondations des maisons du Var
@@ -115,7 +115,7 @@ export function FondationsSection() {
                   viewport={{ once: true }}
                 >
                   <span
-                    className="w-1.5 h-1.5 rounded-full bg-[#D97706] mt-2 flex-shrink-0"
+                    className="w-1.5 h-1.5 rounded-full bg-[#D42020] mt-2 flex-shrink-0"
                     aria-hidden="true"
                   />
                   <div>
@@ -136,8 +136,8 @@ export function FondationsSection() {
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-[#D97706]/20 flex items-center justify-center flex-shrink-0">
-                <CheckCircle className="w-5 h-5 text-[#D97706]" aria-hidden="true" />
+              <div className="w-10 h-10 rounded-xl bg-[#D42020]/20 flex items-center justify-center flex-shrink-0">
+                <CheckCircle className="w-5 h-5 text-[#D42020]" aria-hidden="true" />
               </div>
               <h3 className="font-barlow-condensed font-bold text-xl text-white uppercase">
                 Nos techniques de renforcement
@@ -155,7 +155,7 @@ export function FondationsSection() {
                   viewport={{ once: true }}
                 >
                   <span
-                    className="w-1.5 h-1.5 rounded-full bg-[#D97706] mt-2 flex-shrink-0"
+                    className="w-1.5 h-1.5 rounded-full bg-[#D42020] mt-2 flex-shrink-0"
                     aria-hidden="true"
                   />
                   <div>
@@ -170,17 +170,17 @@ export function FondationsSection() {
 
         {/* Bandeau assurance */}
         <motion.div
-          className="bg-[#D97706]/10 border border-[#D97706]/25 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center gap-6"
+          className="bg-[#D42020]/10 border border-[#D42020]/25 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center gap-6"
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-40px" }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
         >
-          <div className="w-12 h-12 rounded-xl bg-[#D97706]/20 flex items-center justify-center flex-shrink-0">
-            <Shield className="w-6 h-6 text-[#D97706]" aria-hidden="true" />
+          <div className="w-12 h-12 rounded-xl bg-[#D42020]/20 flex items-center justify-center flex-shrink-0">
+            <Shield className="w-6 h-6 text-[#D42020]" aria-hidden="true" />
           </div>
           <div className="flex-1">
-            <p className="text-[#D97706] font-semibold uppercase tracking-widest text-xs mb-1">
+            <p className="text-[#D42020] font-semibold uppercase tracking-widest text-xs mb-1">
               Prise en charge assurance
             </p>
             <h4 className="text-white font-barlow-condensed font-bold text-xl uppercase mb-2">
@@ -198,7 +198,7 @@ export function FondationsSection() {
             <Button
               asChild
               size="lg"
-              className="bg-[#D97706] hover:bg-[#B45309] text-white font-bold whitespace-nowrap shadow-lg shadow-[#D97706]/20"
+              className="bg-[#D42020] hover:bg-[#B01A1A] text-white font-bold whitespace-nowrap shadow-lg shadow-[#D42020]/20"
             >
               <Link href="/contact">
                 <FileText className="w-4 h-4 mr-2" aria-hidden="true" />

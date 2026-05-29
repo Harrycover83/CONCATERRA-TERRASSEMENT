@@ -33,9 +33,9 @@ export function LocalPageLayout({
 
       <div className="pt-16 md:pt-20">
         {/* Hero */}
-        <section className="bg-[#1C2B3A] py-16 text-white">
+        <section className="bg-[#1A3020] py-16 text-white">
           <div className="container mx-auto px-4">
-            <p className="text-[#D97706] font-semibold uppercase tracking-widest text-sm mb-3">
+            <p className="text-[#D42020] font-semibold uppercase tracking-widest text-sm mb-3">
               Intervention locale — {city}, Var (83)
             </p>
             <h1 className="font-barlow-condensed font-extrabold text-4xl sm:text-5xl md:text-6xl uppercase mb-4 max-w-3xl">
@@ -45,7 +45,7 @@ export function LocalPageLayout({
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 asChild
-                className="bg-[#D97706] hover:bg-[#B45309] text-white font-bold"
+                className="bg-[#D42020] hover:bg-[#B01A1A] text-white font-bold"
               >
                 <Link href="/contact">Devis gratuit sous 24h</Link>
               </Button>
@@ -63,7 +63,7 @@ export function LocalPageLayout({
         {/* Services disponibles */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="font-barlow-condensed font-bold text-3xl text-[#1C2B3A] uppercase mb-4">
+            <h2 className="font-barlow-condensed font-bold text-3xl text-[#1A3020] uppercase mb-4">
               Nos services à {city}
             </h2>
             <p className="text-gray-600 mb-8">
@@ -75,11 +75,11 @@ export function LocalPageLayout({
                 <Link
                   key={s.slug}
                   href={`/services/${s.slug}`}
-                  className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 hover:border-[#D97706] hover:bg-[#D97706]/5 transition-all"
+                  className="flex items-start gap-3 p-4 rounded-lg border border-gray-200 hover:border-[#D42020] hover:bg-[#D42020]/5 transition-all"
                 >
                   <span className="text-2xl flex-shrink-0" aria-hidden="true">{s.icon}</span>
                   <div>
-                    <p className="font-semibold text-[#1C2B3A] text-sm">{s.title}</p>
+                    <p className="font-semibold text-[#1A3020] text-sm">{s.title}</p>
                     <p className="text-gray-500 text-xs mt-0.5">{s.shortDesc}</p>
                   </div>
                 </Link>
@@ -100,7 +100,7 @@ export function LocalPageLayout({
         {/* Carte */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="font-barlow-condensed font-bold text-3xl text-[#1C2B3A] uppercase mb-6">
+            <h2 className="font-barlow-condensed font-bold text-3xl text-[#1A3020] uppercase mb-6">
               Nous intervenons à {city} et aux alentours
             </h2>
             <div className="rounded-xl overflow-hidden shadow-lg mb-8">
@@ -127,7 +127,7 @@ export function LocalPageLayout({
         {/* Pourquoi Concaterra */}
         <section className="py-16 bg-[#F5F5F0]">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="font-barlow-condensed font-bold text-3xl text-[#1C2B3A] uppercase mb-8">
+            <h2 className="font-barlow-condensed font-bold text-3xl text-[#1A3020] uppercase mb-8">
               Pourquoi choisir Concaterra pour votre terrassement à {city} ?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -150,7 +150,7 @@ export function LocalPageLayout({
               ].map((item) => (
                 <div key={item.title} className="bg-white rounded-xl p-6 shadow-sm">
                   <div className="text-3xl mb-3" aria-hidden="true">{item.icon}</div>
-                  <h3 className="font-semibold text-[#1C2B3A] mb-2">{item.title}</h3>
+                  <h3 className="font-semibold text-[#1A3020] mb-2">{item.title}</h3>
                   <p className="text-gray-600 text-sm">{item.text}</p>
                 </div>
               ))}
@@ -159,7 +159,7 @@ export function LocalPageLayout({
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-[#D97706]">
+        <section className="py-16 bg-[#D42020]">
           <div className="container mx-auto px-4 text-center max-w-2xl">
             <h2 className="font-barlow-condensed font-extrabold text-3xl sm:text-4xl text-white uppercase mb-4">
               Votre projet de terrassement à {city} ?
@@ -171,7 +171,7 @@ export function LocalPageLayout({
             <Button
               asChild
               size="lg"
-              className="bg-white text-[#D97706] hover:bg-gray-100 font-bold"
+              className="bg-white text-[#D42020] hover:bg-gray-100 font-bold"
             >
               <Link href="/contact">Demander un devis gratuit</Link>
             </Button>

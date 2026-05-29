@@ -12,10 +12,10 @@ export function ZoneMap() {
     <section className="py-20 bg-[#F5F5F0]" id="zone">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <p className="text-[#D97706] font-semibold uppercase tracking-widest text-sm mb-2">
+          <p className="text-[#D42020] font-semibold uppercase tracking-widest text-sm mb-2">
             Déplacements dans tout le 83
           </p>
-          <h2 className="font-barlow-condensed font-bold text-3xl sm:text-4xl md:text-5xl text-[#1C2B3A] uppercase mb-4">
+          <h2 className="font-barlow-condensed font-bold text-3xl sm:text-4xl md:text-5xl text-[#1A3020] uppercase mb-4">
             Zone d&apos;intervention
           </h2>
           <p className="text-gray-600 max-w-xl mx-auto">
@@ -53,7 +53,7 @@ export function ZoneMap() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase mb-6">
+            <h3 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase mb-6">
               Communes desservies
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-8">
@@ -62,13 +62,13 @@ export function ZoneMap() {
                   key={city}
                   className="flex items-center gap-2 text-sm text-gray-700"
                 >
-                  <span className="w-2 h-2 rounded-full bg-[#D97706] flex-shrink-0" aria-hidden="true" />
+                  <span className="w-2 h-2 rounded-full bg-[#D42020] flex-shrink-0" aria-hidden="true" />
                   {city}
                 </div>
               ))}
             </div>
 
-            <div className="bg-[#1C2B3A] rounded-xl p-6 text-white">
+            <div className="bg-[#1A3020] rounded-xl p-6 text-white">
               <p className="font-semibold mb-2">Vous n&apos;êtes pas dans cette liste ?</p>
               <p className="text-gray-300 text-sm mb-4">
                 Nous nous déplaçons dans tout le Var (83) et les départements
@@ -77,7 +77,7 @@ export function ZoneMap() {
               </p>
               <Button
                 asChild
-                className="bg-[#D97706] hover:bg-[#B45309] text-white font-semibold"
+                className="bg-[#D42020] hover:bg-[#B01A1A] text-white font-semibold"
               >
                 <Link href="/contact">Nous contacter</Link>
               </Button>

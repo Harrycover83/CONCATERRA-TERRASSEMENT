@@ -35,7 +35,7 @@ export default function TerrassementToulonPage() {
       intro="Entreprise de terrassement et travaux publics intervenant à Toulon et dans l'agglomération toulonnaise. Terrassement général, VRD, enrochement : devis gratuit sous 24h."
       specificContent={
         <div className="space-y-6 text-gray-700 leading-relaxed">
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             Terrassement à Toulon : les spécificités du terrain varois
           </h2>
           <p>
@@ -51,7 +51,7 @@ export default function TerrassementToulonPage() {
             piscines, aménagements extérieurs) et des chantiers professionnels
             (réseaux VRD, voirie, terrassement industriel).
           </p>
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             Zones d&apos;intervention autour de Toulon
           </h2>
           <p>

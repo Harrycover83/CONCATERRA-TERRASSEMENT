@@ -35,7 +35,7 @@ export default function TerrassementHyeresPage() {
       intro="Concaterra Terrassement intervient à Hyères et dans l'est-Var pour tous vos chantiers de terrassement, VRD et aménagements extérieurs. Devis gratuit sous 24h."
       specificContent={
         <div className="space-y-6 text-gray-700 leading-relaxed">
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             Terrassement à Hyères : entre mer et collines
           </h2>
           <p>
@@ -51,7 +51,7 @@ export default function TerrassementHyeresPage() {
             réalisez des travaux VRD en plaine, Concaterra Terrassement adapte
             ses techniques aux contraintes spécifiques de chaque parcelle.
           </p>
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             Zones d&apos;intervention autour de Hyères
           </h2>
           <p>

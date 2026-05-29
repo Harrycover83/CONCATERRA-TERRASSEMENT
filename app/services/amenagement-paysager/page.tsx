@@ -83,7 +83,7 @@ export default function AmenagementPaysagerPage() {
       ]}
       content={
         <div className="space-y-6 text-gray-700 leading-relaxed">
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             L&apos;aménagement paysager en Provence : spécificités et savoir-faire
           </h2>
           <p>
@@ -100,7 +100,7 @@ export default function AmenagementPaysagerPage() {
             esthétique attentive à l&apos;intégration dans le paysage provençal.
           </p>
 
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             De la conception à la réalisation
           </h2>
           <p>
@@ -117,7 +117,7 @@ export default function AmenagementPaysagerPage() {
             la qualité de l&apos;ensemble des travaux paysagers.
           </p>
 
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             Végétaux méditerranéens : des choix adaptés au Var
           </h2>
           <p>

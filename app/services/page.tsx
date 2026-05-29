@@ -36,9 +36,9 @@ export default function ServicesPage() {
 
       <div className="pt-16 md:pt-20">
         {/* En-tête */}
-        <section className="bg-[#1C2B3A] py-16 text-white">
+        <section className="bg-[#1A3020] py-16 text-white">
           <div className="container mx-auto px-4 text-center">
-            <p className="text-[#D97706] font-semibold uppercase tracking-widest text-sm mb-3">
+            <p className="text-[#D42020] font-semibold uppercase tracking-widest text-sm mb-3">
               Concaterra Terrassement
             </p>
             <h1 className="font-barlow-condensed font-extrabold text-4xl sm:text-5xl md:text-6xl uppercase mb-4">
@@ -63,12 +63,12 @@ export default function ServicesPage() {
                   href={`/services/${service.slug}`}
                   className="block group"
                 >
-                  <Card className="h-full border-2 border-transparent hover:border-[#D97706] transition-all duration-200">
+                  <Card className="h-full border-2 border-transparent hover:border-[#D42020] transition-all duration-200">
                     <CardHeader>
-                      <div className="w-11 h-11 rounded-xl bg-[#D97706]/10 group-hover:bg-[#D97706] flex items-center justify-center mb-3 transition-colors duration-300">
-                        <Icon className="w-5 h-5 text-[#D97706] group-hover:text-white transition-colors duration-300" aria-hidden="true" />
+                      <div className="w-11 h-11 rounded-xl bg-[#D42020]/10 group-hover:bg-[#D42020] flex items-center justify-center mb-3 transition-colors duration-300">
+                        <Icon className="w-5 h-5 text-[#D42020] group-hover:text-white transition-colors duration-300" aria-hidden="true" />
                       </div>
-                      <CardTitle className="font-barlow-condensed font-bold text-xl text-[#1C2B3A] uppercase group-hover:text-[#D97706] transition-colors">
+                      <CardTitle className="font-barlow-condensed font-bold text-xl text-[#1A3020] uppercase group-hover:text-[#D42020] transition-colors">
                         {service.title}
                       </CardTitle>
                     </CardHeader>
@@ -76,7 +76,7 @@ export default function ServicesPage() {
                       <p className="text-gray-600 text-sm leading-relaxed mb-4">
                         {service.shortDesc}
                       </p>
-                      <p className="text-[#D97706] text-sm font-medium group-hover:underline">
+                      <p className="text-[#D42020] text-sm font-medium group-hover:underline">
                         Découvrir →
                       </p>
                     </CardContent>
@@ -91,7 +91,7 @@ export default function ServicesPage() {
         {/* CTA */}
         <section className="py-16 bg-white border-t border-gray-100">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="font-barlow-condensed font-bold text-3xl text-[#1C2B3A] uppercase mb-4">
+            <h2 className="font-barlow-condensed font-bold text-3xl text-[#1A3020] uppercase mb-4">
               Un projet ? Obtenez votre devis gratuit
             </h2>
             <p className="text-gray-600 mb-6 max-w-lg mx-auto">
@@ -101,7 +101,7 @@ export default function ServicesPage() {
             <Button
               asChild
               size="lg"
-              className="bg-[#D97706] hover:bg-[#B45309] text-white font-bold"
+              className="bg-[#D42020] hover:bg-[#B01A1A] text-white font-bold"
             >
               <Link href="/contact">Demander un devis</Link>
             </Button>

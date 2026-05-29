@@ -83,7 +83,7 @@ export default function VRDPage() {
       ]}
       content={
         <div className="space-y-6 text-gray-700 leading-relaxed">
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             Les VRD : l&apos;infrastructure indispensable de tout terrain
           </h2>
           <p>
@@ -101,7 +101,7 @@ export default function VRDPage() {
             majeur pour anticiper les contraintes propres à chaque commune du 83.
           </p>
 
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             Méthodologie : de la DICT à la réception
           </h2>
           <p>
@@ -127,7 +127,7 @@ export default function VRDPage() {
             attestations de conformité.
           </p>
 
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             VRD pour maisons individuelles, lotissements et professionnels
           </h2>
           <p>

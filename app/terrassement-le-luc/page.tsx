@@ -35,7 +35,7 @@ export default function TerrassementLeLucPage() {
       intro="Concaterra Terrassement est basé à Gonfaron, tout proche du Luc. Nous intervenons au Luc et dans la Plaine des Maures pour vos terrassements, VRD et aménagements. Devis gratuit sous 24h."
       specificContent={
         <div className="space-y-6 text-gray-700 leading-relaxed">
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             Terrassement au Luc : notre secteur de proximité immédiate
           </h2>
           <p>
@@ -51,7 +51,7 @@ export default function TerrassementLeLucPage() {
             parfaitement les terrains locaux : sols argilo-calcaires, nappes
             phréatiques, contraintes liées aux cours d&apos;eau de la plaine.
           </p>
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
             Zones d&apos;intervention autour du Luc
           </h2>
           <p>

@@ -108,9 +108,9 @@ export function ContactClient() {
 
       <div className="pt-16 md:pt-20">
         {/* Hero */}
-        <section className="bg-[#1C2B3A] py-16 text-white">
+        <section className="bg-[#1A3020] py-16 text-white">
           <div className="container mx-auto px-4">
-            <p className="text-[#D97706] font-semibold uppercase tracking-widest text-sm mb-3">
+            <p className="text-[#D42020] font-semibold uppercase tracking-widest text-sm mb-3">
               Devis gratuit — Réponse sous 24h
             </p>
             <h1 className="font-barlow-condensed font-extrabold text-4xl sm:text-5xl uppercase mb-4">
@@ -130,7 +130,7 @@ export function ContactClient() {
 
               {/* Formulaire */}
               <div className="lg:col-span-2 bg-white rounded-2xl shadow-sm p-8">
-                <h2 className="font-barlow-condensed font-bold text-2xl text-[#1C2B3A] uppercase mb-6">
+                <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase mb-6">
                   Demande de devis
                 </h2>
 
@@ -280,12 +280,12 @@ export function ContactClient() {
                         name="rgpd"
                         checked={form.rgpd}
                         onChange={handleChange}
-                        className="mt-1 h-4 w-4 rounded border-gray-300 text-[#D97706] focus:ring-[#D97706]"
+                        className="mt-1 h-4 w-4 rounded border-gray-300 text-[#D42020] focus:ring-[#D42020]"
                         aria-describedby={errors.rgpd ? "rgpd-error" : undefined}
                       />
                       <span className="text-sm text-gray-600">
                         J&apos;accepte que mes données soient utilisées pour traiter ma demande de devis, conformément à la{" "}
-                        <Link href="/mentions-legales" className="text-[#D97706] hover:underline">
+                        <Link href="/mentions-legales" className="text-[#D42020] hover:underline">
                           politique de confidentialité
                         </Link>
                         . *
@@ -299,7 +299,7 @@ export function ContactClient() {
                   <Button
                     type="submit"
                     disabled={loading}
-                    className="w-full bg-[#D97706] hover:bg-[#B45309] text-white font-bold text-base py-3"
+                    className="w-full bg-[#D42020] hover:bg-[#B01A1A] text-white font-bold text-base py-3"
                   >
                     {loading ? "Envoi en cours…" : "Envoyer ma demande de devis"}
                   </Button>
@@ -309,7 +309,7 @@ export function ContactClient() {
               {/* Infos contact */}
               <div className="space-y-6">
                 <div className="bg-white rounded-2xl shadow-sm p-6">
-                  <h3 className="font-barlow-condensed font-bold text-xl text-[#1C2B3A] uppercase mb-4">
+                  <h3 className="font-barlow-condensed font-bold text-xl text-[#1A3020] uppercase mb-4">
                     Nous contacter
                   </h3>
                   <div className="space-y-4 text-sm text-gray-700">
@@ -327,7 +327,7 @@ export function ContactClient() {
                         <p className="font-semibold">Téléphone</p>
                         <a
                           href={`tel:${COMPANY.phone}`}
-                          className="text-[#D97706] hover:underline font-semibold"
+                          className="text-[#D42020] hover:underline font-semibold"
                         >
                           {COMPANY.phoneFormatted}
                         </a>
@@ -339,7 +339,7 @@ export function ContactClient() {
                         <p className="font-semibold">Email</p>
                         <a
                           href={`mailto:${COMPANY.email}`}
-                          className="text-[#D97706] hover:underline break-all"
+                          className="text-[#D42020] hover:underline break-all"
                         >
                           {COMPANY.email}
                         </a>
@@ -356,7 +356,7 @@ export function ContactClient() {
                   </div>
                 </div>
 
-                <div className="bg-[#1C2B3A] rounded-2xl p-6 text-white">
+                <div className="bg-[#1A3020] rounded-2xl p-6 text-white">
                   <p className="font-barlow-condensed font-bold text-xl uppercase mb-2">
                     Devis sous 24h
                   </p>
@@ -366,8 +366,8 @@ export function ContactClient() {
                   </p>
                 </div>
 
-                <div className="bg-[#D97706]/10 border border-[#D97706]/30 rounded-2xl p-6">
-                  <p className="font-semibold text-[#1C2B3A] mb-1">Zone d&apos;intervention</p>
+                <div className="bg-[#D42020]/10 border border-[#D42020]/30 rounded-2xl p-6">
+                  <p className="font-semibold text-[#1A3020] mb-1">Zone d&apos;intervention</p>
                   <p className="text-sm text-gray-600">
                     Var (83) — PACA. Gonfaron, Le Luc, Toulon, Draguignan,
                     Brignoles, Hyères et tout le département.

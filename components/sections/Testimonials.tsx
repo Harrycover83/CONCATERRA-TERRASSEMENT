@@ -52,14 +52,14 @@ export function Testimonials() {
   }
 
   return (
-    <section className="py-20 bg-[#1C2B3A]" id="temoignages">
+    <section className="py-20 bg-[#1A3020]" id="temoignages">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
       />
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <p className="text-[#D97706] font-semibold uppercase tracking-widest text-sm mb-2">
+          <p className="text-[#D42020] font-semibold uppercase tracking-widest text-sm mb-2">
             Ce que disent nos clients
           </p>
           <h2 className="font-barlow-condensed font-bold text-3xl sm:text-4xl md:text-5xl text-white uppercase">
@@ -82,7 +82,7 @@ export function Testimonials() {
                 {Array.from({ length: t.rating }).map((_, i) => (
                   <svg
                     key={i}
-                    className="w-5 h-5 text-[#D97706]"
+                    className="w-5 h-5 text-[#D42020]"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     aria-hidden="true"

@@ -50,10 +50,10 @@ function GalleryItem({ photo, index }: { photo: (typeof PHOTOS)[0]; index: numbe
       transition={{ duration: 0.4, delay: index * 0.06 }}
       className="break-inside-avoid relative overflow-hidden rounded-lg group"
     >
-      <div className="relative aspect-[4/3] bg-[#1C2B3A]">
+      <div className="relative aspect-[4/3] bg-[#1A3020]">
         {error ? (
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-2">
-            <Camera className="w-8 h-8 text-[#D97706]/40" />
+            <Camera className="w-8 h-8 text-[#D42020]/40" />
             <span className="text-white/30 text-xs uppercase tracking-widest font-medium">
               {photo.category}
             </span>
@@ -70,7 +70,7 @@ function GalleryItem({ photo, index }: { photo: (typeof PHOTOS)[0]; index: numbe
               onError={() => setError(true)}
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-200 flex items-end p-3">
-              <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-xs font-medium bg-[#D97706] px-2 py-1 rounded">
+              <span className="opacity-0 group-hover:opacity-100 transition-opacity text-white text-xs font-medium bg-[#D42020] px-2 py-1 rounded">
                 {photo.category}
               </span>
             </div>
@@ -86,10 +86,10 @@ export function Gallery() {
     <section className="py-20 bg-[#F5F5F0]" id="galerie">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <p className="text-[#D97706] font-semibold uppercase tracking-widest text-sm mb-2">
+          <p className="text-[#D42020] font-semibold uppercase tracking-widest text-sm mb-2">
             Notre travail en images
           </p>
-          <h2 className="font-barlow-condensed font-bold text-3xl sm:text-4xl md:text-5xl text-[#1C2B3A] uppercase mb-4">
+          <h2 className="font-barlow-condensed font-bold text-3xl sm:text-4xl md:text-5xl text-[#1A3020] uppercase mb-4">
             Nos réalisations
           </h2>
           <p className="text-gray-600 max-w-xl mx-auto">
@@ -107,7 +107,7 @@ export function Gallery() {
           <Button
             asChild
             size="lg"
-            className="bg-[#D97706] hover:bg-[#B45309] text-white font-bold"
+            className="bg-[#D42020] hover:bg-[#B01A1A] text-white font-bold"
           >
             <Link href="/realisations">Voir toutes nos réalisations</Link>
           </Button>

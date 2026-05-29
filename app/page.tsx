@@ -60,11 +60,11 @@ export default function HomePage() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/images/chantiers/about-bg.jpg')" }}
         />
-        <div className="absolute inset-0 bg-[#0D1B2A]/20" />
+        <div className="absolute inset-0 bg-[#0F1A0F]/20" />
 
         <div className="relative z-10 container mx-auto px-4">
           <div className="text-center mb-16">
-            <p className="text-[#D97706] font-semibold uppercase tracking-widest text-xs mb-3">
+            <p className="text-[#D42020] font-semibold uppercase tracking-widest text-xs mb-3">
               À propos
             </p>
             <h2 className="font-barlow-condensed font-bold text-4xl sm:text-5xl text-white uppercase mb-5">
@@ -99,10 +99,10 @@ export default function HomePage() {
             ].map(({ Icon, title, text }) => (
               <div
                 key={title}
-                className="group relative bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-[#D97706]/50 rounded-2xl p-8 transition-all duration-300"
+                className="group relative bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 hover:border-[#D42020]/50 rounded-2xl p-8 transition-all duration-300"
               >
-                <div className="w-12 h-12 rounded-xl bg-[#D97706]/20 group-hover:bg-[#D97706]/40 flex items-center justify-center mb-5 transition-colors">
-                  <Icon className="w-6 h-6 text-[#D97706]" aria-hidden="true" />
+                <div className="w-12 h-12 rounded-xl bg-[#D42020]/20 group-hover:bg-[#D42020]/40 flex items-center justify-center mb-5 transition-colors">
+                  <Icon className="w-6 h-6 text-[#D42020]" aria-hidden="true" />
                 </div>
                 <h3 className="font-barlow-condensed font-bold text-xl text-white uppercase mb-3">
                   {title}
@@ -118,7 +118,7 @@ export default function HomePage() {
             <Button
               asChild
               size="lg"
-              className="bg-[#D97706] hover:bg-[#B45309] text-white font-bold shadow-lg shadow-[#D97706]/20"
+              className="bg-[#D42020] hover:bg-[#B01A1A] text-white font-bold shadow-lg shadow-[#D42020]/20"
             >
               <Link href="/contact">
                 <FileText className="w-4 h-4 mr-2" aria-hidden="true" />
@@ -136,17 +136,17 @@ export default function HomePage() {
       <FAQ />
 
       {/* CTA final */}
-      <section className="py-24 bg-[#0D1B2A] relative overflow-hidden">
+      <section className="py-24 bg-[#0F1A0F] relative overflow-hidden">
         {/* Ligne décorative */}
-        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D97706] to-transparent" aria-hidden="true" />
+        <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D42020] to-transparent" aria-hidden="true" />
 
         <div className="container mx-auto px-4 text-center relative z-10">
-          <p className="text-[#D97706] font-semibold uppercase tracking-widest text-xs mb-4">
+          <p className="text-[#D42020] font-semibold uppercase tracking-widest text-xs mb-4">
             Passez à l&apos;action
           </p>
           <h2 className="font-barlow-condensed font-extrabold text-4xl sm:text-5xl md:text-6xl text-white uppercase mb-6 leading-tight">
             Prêt à démarrer<br />
-            <span className="text-[#D97706]">votre projet ?</span>
+            <span className="text-[#D42020]">votre projet ?</span>
           </h2>
           <p className="text-white/50 text-lg mb-10 max-w-xl mx-auto">
             Contactez-nous dès aujourd&apos;hui. Devis gratuit et sans engagement — réponse sous 24h.
@@ -156,7 +156,7 @@ export default function HomePage() {
             <Button
               asChild
               size="lg"
-              className="bg-[#D97706] hover:bg-[#B45309] text-white font-bold text-base px-10 h-12 shadow-lg shadow-[#D97706]/20"
+              className="bg-[#D42020] hover:bg-[#B01A1A] text-white font-bold text-base px-10 h-12 shadow-lg shadow-[#D42020]/20"
             >
               <Link href="/contact">
                 <FileText className="w-4 h-4 mr-2" aria-hidden="true" />
@@ -178,7 +178,7 @@ export default function HomePage() {
           <div className="flex flex-wrap justify-center gap-6 text-xs text-white/30">
             {["Devis 100% gratuit", "Sans engagement", "Réponse sous 24h", "Intervention dans tout le Var"].map((item) => (
               <span key={item} className="flex items-center gap-1.5">
-                <CheckCircle className="w-3.5 h-3.5 text-[#D97706]" aria-hidden="true" />
+                <CheckCircle className="w-3.5 h-3.5 text-[#D42020]" aria-hidden="true" />
                 {item}
               </span>
             ))}
