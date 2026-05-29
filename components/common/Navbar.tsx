@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -46,17 +47,14 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3" aria-label="Concaterra Terrassement — Accueil">
-            <span className="flex items-center justify-center w-10 h-10 rounded bg-[#D97706] text-white font-bold text-sm leading-none select-none">
-              CT
-            </span>
-            <div className="hidden sm:block">
-              <p className="text-white font-bold text-base leading-tight font-barlow-condensed uppercase tracking-wide">
-                Concaterra
-              </p>
-              <p className="text-[#D97706] text-xs font-medium uppercase tracking-widest">
-                Terrassement
-              </p>
-            </div>
+            <Image
+              src="/logo.png"
+              alt="Concaterra Terrassement"
+              width={120}
+              height={48}
+              className="h-10 w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* Navigation desktop */}
