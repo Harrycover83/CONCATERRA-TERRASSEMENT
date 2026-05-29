@@ -60,7 +60,7 @@ export default function HomePage() {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/images/chantiers/about-bg.jpg')" }}
         />
-        <div className="absolute inset-0 bg-[#0D1B2A]/75" />
+        <div className="absolute inset-0 bg-[#0D1B2A]/40" />
 
         <div className="relative z-10 container mx-auto px-4">
           <div className="text-center mb-16">

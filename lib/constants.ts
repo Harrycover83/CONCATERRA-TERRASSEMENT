@@ -53,7 +53,7 @@ export const SERVICES = [
     slug: "enrochement",
     title: "Enrochement",
     shortDesc: "Soutènement, protection de berges et gabions.",
-    icon: "🪨",
+    icon: "⛰️",
     keywords: ["enrochement Var", "soutènement terrain 83"],
   },
   {
