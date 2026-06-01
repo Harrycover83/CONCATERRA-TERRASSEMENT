@@ -4,7 +4,7 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import { SERVICES } from "@/lib/constants"
 import { Button } from "@/components/ui/button"
-import { HardHat, GitBranch, Mountain, TreePine, RefreshCcw, Truck, ArrowRight } from "lucide-react"
+import { HardHat, GitBranch, Mountain, TreePine, Shield, ArrowRight } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 
 const SERVICE_ICONS: Record<string, LucideIcon> = {
@@ -12,8 +12,7 @@ const SERVICE_ICONS: Record<string, LucideIcon> = {
   "vrd-voirie-reseaux": GitBranch,
   "enrochement": Mountain,
   "amenagement-paysager": TreePine,
-  "concassage-recyclage": RefreshCcw,
-  "transport-materiaux": Truck,
+  "renforcement-fondations": Shield,
 }
 
 export function Services() {
@@ -24,7 +23,7 @@ export function Services() {
           <p className="text-[#D42020] font-semibold uppercase tracking-widest text-xs mb-3">
             Ce que nous faisons
           </p>
-          <h2 className="font-barlow-condensed font-bold text-4xl sm:text-5xl text-[#1A3020] uppercase mb-5">
+          <h2 className="font-barlow-condensed font-bold text-4xl sm:text-5xl text-[#57A639] uppercase mb-5">
             Nos services
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto">
@@ -52,7 +51,7 @@ export function Services() {
                       <Icon className="w-5 h-5 text-[#D42020] group-hover:text-white transition-colors duration-300" aria-hidden="true" />
                     </div>
                     {/* Titre */}
-                    <h3 className="font-barlow-condensed font-bold text-lg text-[#1A3020] group-hover:text-[#D42020] uppercase mb-2 transition-colors">
+                    <h3 className="font-barlow-condensed font-bold text-lg text-[#57A639] group-hover:text-[#D42020] uppercase mb-2 transition-colors">
                       {service.title}
                     </h3>
                     {/* Description */}
@@ -75,7 +74,7 @@ export function Services() {
           <Button
             asChild
             size="lg"
-            className="bg-[#1A3020] hover:bg-[#1A3A20] text-white font-bold shadow-md"
+            className="bg-[#57A639] hover:bg-[#4D9032] text-white font-bold shadow-md"
           >
             <Link href="/services">Toutes nos prestations</Link>
           </Button>

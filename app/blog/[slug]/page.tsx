@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import Link from "next/link"
 import { marked } from "marked"
@@ -79,7 +79,7 @@ export default async function BlogArticlePage({ params }: Props) {
 
       <div className="pt-16 md:pt-20">
         {/* Hero article */}
-        <section className="bg-[#1A3020] py-16 text-white">
+        <section className="bg-[#57A639] py-16 text-white">
           <div className="container mx-auto px-4 max-w-4xl">
             <div className="flex flex-wrap gap-2 mb-4">
               {post.tags.slice(0, 3).map((tag) => (
@@ -94,7 +94,7 @@ export default async function BlogArticlePage({ params }: Props) {
             <h1 className="font-barlow-condensed font-extrabold text-3xl sm:text-4xl md:text-5xl uppercase mb-4 leading-tight">
               {post.title}
             </h1>
-            <p className="text-gray-300">
+            <p className="text-white/80">
               Publié le{" "}
               {new Date(post.date).toLocaleDateString("fr-FR", {
                 day: "numeric",
@@ -124,7 +124,7 @@ export default async function BlogArticlePage({ params }: Props) {
                   </p>
                   <p className="text-white/90 text-sm mb-4">
                     Concaterra Terrassement intervient dans le Var (83).
-                    Devis gratuit sous 24h.
+                    Devis gratuit sous 1 semaine.
                   </p>
                   <Button
                     asChild
@@ -135,7 +135,7 @@ export default async function BlogArticlePage({ params }: Props) {
                 </div>
 
                 <div className="bg-gray-50 rounded-2xl p-6">
-                  <p className="font-semibold text-[#1A3020] mb-3">
+                  <p className="font-semibold text-[#57A639] mb-3">
                     Autres articles
                   </p>
                   <ul className="space-y-3">

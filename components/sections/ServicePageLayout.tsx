@@ -1,4 +1,4 @@
-import Link from "next/link"
+﻿import Link from "next/link"
 import { Breadcrumb } from "@/components/common/Breadcrumb"
 import { Button } from "@/components/ui/button"
 import { COMPANY, SERVICES } from "@/lib/constants"
@@ -36,7 +36,7 @@ export function ServicePageLayout({
 
       <div className="pt-16 md:pt-20">
         {/* Hero */}
-        <section className="bg-[#1A3020] py-16 text-white">
+        <section className="bg-[#57A639] py-16 text-white">
           <div className="container mx-auto px-4">
             <p className="text-[#D42020] font-semibold uppercase tracking-widest text-sm mb-3">
               Service — Var (83)
@@ -44,12 +44,12 @@ export function ServicePageLayout({
             <h1 className="font-barlow-condensed font-extrabold text-4xl sm:text-5xl md:text-6xl uppercase mb-4 max-w-3xl">
               {title} dans le Var (83)
             </h1>
-            <p className="text-gray-300 max-w-2xl text-lg mb-6">{intro}</p>
+            <p className="text-white/80 max-w-2xl text-lg mb-6">{intro}</p>
             <Button
               asChild
               className="bg-[#D42020] hover:bg-[#B01A1A] text-white font-bold"
             >
-              <Link href="/contact">Devis gratuit sous 24h</Link>
+              <Link href="/contact">Devis gratuit sous 1 semaine</Link>
             </Button>
           </div>
         </section>
@@ -66,7 +66,7 @@ export function ServicePageLayout({
         {/* Nos prestations */}
         <section className="py-16 bg-[#F5F5F0]">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="font-barlow-condensed font-bold text-3xl text-[#1A3020] uppercase mb-8">
+            <h2 className="font-barlow-condensed font-bold text-3xl text-[#57A639] uppercase mb-8">
               Nos prestations
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -75,7 +75,7 @@ export function ServicePageLayout({
                   key={p.title}
                   className="bg-white rounded-xl p-6 border border-gray-100"
                 >
-                  <h3 className="font-barlow-condensed font-bold text-lg text-[#1A3020] uppercase mb-2">
+                  <h3 className="font-barlow-condensed font-bold text-lg text-[#57A639] uppercase mb-2">
                     {p.title}
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{p.description}</p>
@@ -88,13 +88,13 @@ export function ServicePageLayout({
         {/* Pourquoi nous choisir */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="font-barlow-condensed font-bold text-3xl text-[#1A3020] uppercase mb-8">
+            <h2 className="font-barlow-condensed font-bold text-3xl text-[#57A639] uppercase mb-8">
               Pourquoi nous choisir ?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {args.map((arg) => (
                 <div key={arg.title} className="border-l-4 border-[#D42020] pl-4">
-                  <h3 className="font-semibold text-[#1A3020] mb-2">{arg.title}</h3>
+                  <h3 className="font-semibold text-[#57A639] mb-2">{arg.title}</h3>
                   <p className="text-gray-600 text-sm">{arg.description}</p>
                 </div>
               ))}
@@ -105,7 +105,7 @@ export function ServicePageLayout({
         {/* Zone d'intervention */}
         <section className="py-16 bg-[#F5F5F0]">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="font-barlow-condensed font-bold text-3xl text-[#1A3020] uppercase mb-6">
+            <h2 className="font-barlow-condensed font-bold text-3xl text-[#57A639] uppercase mb-6">
               Zone d&apos;intervention
             </h2>
             <p className="text-gray-600 mb-4">
@@ -128,7 +128,7 @@ export function ServicePageLayout({
         {/* Services liés */}
         <section className="py-16 bg-white border-t border-gray-100">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase mb-6">
+            <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase mb-6">
               Autres services
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -139,7 +139,7 @@ export function ServicePageLayout({
                   className="flex items-center gap-3 p-4 rounded-lg border border-gray-200 hover:border-[#D42020] hover:bg-[#D42020]/5 transition-all"
                 >
                   <span className="text-2xl" aria-hidden="true">{s.icon}</span>
-                  <span className="text-sm font-semibold text-[#1A3020]">{s.title}</span>
+                  <span className="text-sm font-semibold text-[#57A639]">{s.title}</span>
                 </Link>
               ))}
             </div>
@@ -153,7 +153,7 @@ export function ServicePageLayout({
               Demandez un devis gratuit
             </h2>
             <p className="text-white/90 mb-6">
-              Réponse sous 24h — Intervention dans tout le Var (83)
+              Réponse sous 24h ouvrables — devis sous 1 semaine — Intervention dans tout le Var (83)
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button

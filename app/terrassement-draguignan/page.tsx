@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import { LocalPageLayout } from "@/components/sections/LocalPageLayout"
 import { COMPANY } from "@/lib/constants"
 
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Terrassement Draguignan — Concaterra Terrassement, Var (83)",
     description:
-      "Entreprise de terrassement intervenant à Draguignan et dans le Haut-Var. Devis gratuit sous 24h. Concaterra Terrassement, Gonfaron (83590).",
+      "Entreprise de terrassement intervenant à Draguignan et dans le Haut-Var. Devis gratuit sous 1 semaine. Concaterra Terrassement, Gonfaron (83590).",
     url: `${COMPANY.siteUrl}/terrassement-draguignan`,
   },
 }
@@ -32,10 +32,10 @@ export default function TerrassementDraguignanPage() {
       lat={43.5382}
       lng={6.4656}
       description="Terrassement à Draguignan et dans le Haut-Var"
-      intro="Entreprise de terrassement et travaux publics au service des particuliers et professionnels à Draguignan. Terrassement, VRD, enrochement : devis gratuit sous 24h."
+      intro="Entreprise de terrassement et travaux publics au service des particuliers et professionnels à Draguignan. Terrassement, VRD, enrochement : Devis gratuit sous 1 semaine."
       specificContent={
         <div className="space-y-6 text-gray-700 leading-relaxed">
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Terrassement à Draguignan et dans le Haut-Var
           </h2>
           <p>
@@ -49,9 +49,9 @@ export default function TerrassementDraguignanPage() {
             Concaterra Terrassement, basé à Gonfaron à environ 35 km de
             Draguignan, intervient régulièrement sur le secteur dracénois pour
             des chantiers de toutes tailles, avec un délai d&apos;intervention
-            rapide et un devis sous 24h.
+            rapide et un devis sous 1 semaine.
           </p>
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Zones d&apos;intervention autour de Draguignan
           </h2>
           <p>

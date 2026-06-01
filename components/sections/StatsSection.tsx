@@ -5,9 +5,9 @@ import { useInView } from "framer-motion"
 
 const STATS = [
   { value: 15, suffix: " ans", label: "d'expérience" },
-  { value: 200, suffix: "+", label: "chantiers réalisés" },
-  { value: 12, suffix: "", label: "communes couvertes" },
-  { value: 24, suffix: "h", label: "délai devis garanti" },
+  { value: 1000, suffix: "+", label: "chantiers réalisés" },
+  { value: 3, suffix: "", label: "départements couverts" },
+  { value: 1, suffix: " sem.", label: "délai devis" },
 ]
 
 function Counter({ target, suffix }: { target: number; suffix: string }) {
@@ -39,7 +39,7 @@ function Counter({ target, suffix }: { target: number; suffix: string }) {
 
 export function StatsSection() {
   return (
-    <section className="bg-[#1A3020] border-t border-b border-white/5" aria-label="Chiffres clés">
+    <section className="bg-[#57A639] border-t border-b border-white/5" aria-label="Chiffres clés">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-white/10">
           {STATS.map((stat) => (

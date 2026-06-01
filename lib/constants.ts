@@ -52,30 +52,23 @@ export const SERVICES = [
   {
     slug: "enrochement",
     title: "Enrochement",
-    shortDesc: "Soutènement, protection de berges et gabions.",
+    shortDesc: "Soutènement, protection de berges et perrés maçonnés.",
     icon: "⛰️",
     keywords: ["enrochement Var", "soutènement terrain 83"],
   },
   {
     slug: "amenagement-paysager",
     title: "Aménagement paysager",
-    shortDesc: "Espaces verts, allées, clôtures et plantations.",
+    shortDesc: "Espaces verts, allées, clôtures et terrassement extérieur.",
     icon: "🌿",
     keywords: ["aménagement paysager Var", "paysagiste Gonfaron"],
   },
   {
-    slug: "concassage-recyclage",
-    title: "Concassage & Recyclage",
-    shortDesc: "Broyage béton, végétaux, pierre et criblage inertes.",
-    icon: "♻️",
-    keywords: ["concassage Var", "recyclage matériaux 83"],
-  },
-  {
-    slug: "transport-materiaux",
-    title: "Transport de matériaux",
-    shortDesc: "Camions benne, livraison agrégats, location engins.",
-    icon: "🚛",
-    keywords: ["transport matériaux Var", "camion benne 83"],
+    slug: "renforcement-fondations",
+    title: "Renforcement de fondations",
+    shortDesc: "Micropieux, reprise en sous-œuvre, sinistres sécheresse Cat Nat.",
+    icon: "🏗️",
+    keywords: ["renforcement fondation Var", "micropieux 83"],
   },
 ]
 
@@ -131,12 +124,12 @@ export const FAQ = [
   {
     question: "Proposez-vous des devis gratuits ?",
     answer:
-      "Oui, tous nos devis sont gratuits et sans engagement. Contactez-nous via le formulaire ou par téléphone, nous vous répondons sous 24h.",
+      "Oui, tous nos devis sont gratuits et sans engagement. Contactez-nous via le formulaire ou par téléphone, nous vous répondons sous 24h et établissons votre devis sous 1 semaine.",
   },
   {
     question: "Quels types de travaux de terrassement réalisez-vous ?",
     answer:
-      "Nous réalisons des travaux de terrassement général (fouilles, déblais, remblais), VRD, enrochement, aménagement paysager, concassage de matériaux et transport.",
+      "Nous réalisons des travaux de terrassement général (fouilles, déblais, remblais), VRD, enrochement, aménagement paysager et renforcement de fondations (micropieux, reprise en sous-œuvre).",
   },
   {
     question: "Travaillez-vous pour les particuliers et les professionnels ?",

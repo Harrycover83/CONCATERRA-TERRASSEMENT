@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
@@ -23,10 +23,10 @@ export function CookieBanner() {
       role="alertdialog"
       aria-modal="false"
       aria-label="Politique de cookies"
-      className="fixed bottom-0 left-0 right-0 z-50 bg-[#1A3020] border-t border-white/10 p-4"
+      className="fixed bottom-0 left-0 right-0 z-50 bg-[#57A639] border-t border-white/10 p-4"
     >
       <div className="container mx-auto flex flex-col sm:flex-row items-start sm:items-center gap-4">
-        <p className="text-sm text-gray-300 flex-1">
+        <p className="text-sm text-white/80 flex-1">
           Ce site n&apos;utilise aucun cookie publicitaire ou de traçage tiers.
           Seuls des cookies fonctionnels essentiels sont utilisés.{" "}
           <a

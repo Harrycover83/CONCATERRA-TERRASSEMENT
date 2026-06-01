@@ -83,7 +83,7 @@ export default function ConcassageRecyclagePage() {
       ]}
       content={
         <div className="space-y-6 text-gray-700 leading-relaxed">
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Concassage et recyclage : une réponse aux enjeux du chantier moderne
           </h2>
           <p>
@@ -101,7 +101,7 @@ export default function ConcassageRecyclagePage() {
             Toulon avec notre matériel mobile.
           </p>
 
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Quels matériaux peut-on recycler sur chantier ?
           </h2>
           <p>
@@ -128,7 +128,7 @@ export default function ConcassageRecyclagePage() {
             </li>
           </ul>
 
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Réglementations sur le recyclage des inertes dans le Var
           </h2>
           <p>

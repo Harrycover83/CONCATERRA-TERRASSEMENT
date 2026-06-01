@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { useState, useCallback } from "react"
 import Image from "next/image"
@@ -15,6 +15,7 @@ import "yet-another-react-lightbox/styles.css"
 
 const CATEGORIES = [
   { value: "all", label: "Toutes catégories" },
+  { value: "fondations", label: "Fondations spéciales" },
   { value: "terrassement", label: "Terrassement" },
   { value: "vrd", label: "VRD & Voirie" },
   { value: "enrochement", label: "Enrochement" },
@@ -38,7 +39,7 @@ const REALISATIONS: Realisation[] = [
     location: "Gonfaron (83)",
   },
   {
-    src: "/images/chantiers/realisation-2.jpg",
+    src: "/images/chantiers/realisation-3.jpg",
     alt: "VRD et réseaux assainissement pour lotissement dans le Var",
     category: "vrd",
     title: "VRD lotissement",
@@ -106,7 +107,7 @@ function RealisationCard({ r }: { r: Realisation }) {
   const [error, setError] = useState(false)
   if (error) {
     return (
-      <div className="relative aspect-[4/3] bg-[#1A3020] flex flex-col items-center justify-center gap-2">
+      <div className="relative aspect-[4/3] bg-[#57A639] flex flex-col items-center justify-center gap-2">
         <Camera className="w-8 h-8 text-[#D42020]/40" />
         <span className="text-white/30 text-xs uppercase tracking-widest font-medium">
           {r.title}
@@ -155,7 +156,7 @@ export function RealisationsClient() {
 
       <div className="pt-16 md:pt-20">
         {/* Hero */}
-        <section className="bg-[#1A3020] py-16 text-white">
+        <section className="bg-[#57A639] py-16 text-white">
           <div className="container mx-auto px-4">
             <p className="text-[#D42020] font-semibold uppercase tracking-widest text-sm mb-3">
               Chantiers réalisés dans le Var
@@ -163,7 +164,7 @@ export function RealisationsClient() {
             <h1 className="font-barlow-condensed font-extrabold text-4xl sm:text-5xl uppercase mb-4">
               Nos réalisations
             </h1>
-            <p className="text-gray-300 max-w-xl text-lg">
+            <p className="text-white/80 max-w-xl text-lg">
               Terrassement, VRD, enrochement, aménagement paysager — découvrez
               nos chantiers réalisés pour des particuliers et professionnels
               dans le Var (83).

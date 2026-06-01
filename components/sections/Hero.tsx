@@ -8,18 +8,18 @@ import { Phone, FileText, ChevronDown, Shield, Clock, MapPin, CheckCircle } from
 export function Hero() {
   return (
     <section
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-[#0F1A0F]"
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-[#1E4A0E]"
       aria-label="Section principale"
     >
       {/* Photo de fond */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/chantiers/hero-bg.jpg')" }}
+        style={{ backgroundImage: "url('/images/chantiers/realisation-3-raw.jpg')" }}
         role="img"
-        aria-label="Renforcement de fondation micropieux Var Concaterra"
+        aria-label="Renforcement de fondation tarière Var Concaterra"
       />
-      {/* Gradient overlay — plus sombre en bas pour lisibilité */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0F1A0F]/20 via-[#0F1A0F]/15 to-[#0F1A0F]/50" aria-hidden="true" />
+      {/* Gradient overlay — léger en bas uniquement pour lisibilité du texte */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40" aria-hidden="true" />
 
       {/* Ligne décorative top */}
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D42020] to-transparent" aria-hidden="true" />
@@ -75,8 +75,8 @@ export function Hero() {
           ].map((item) => (
             <span
               key={item}
-              className="inline-flex items-center gap-1.5 bg-white/15 border border-white/40 rounded-full px-4 py-1.5 text-xs text-white font-medium"
-              dangerouslySetInnerHTML={{ __html: `<svg class="w-3 h-3 text-[#D42020] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>&nbsp;${item}` }}
+              className="inline-flex items-center gap-2 bg-white/15 border border-white/40 rounded-full px-5 py-2 text-sm text-white font-semibold"
+              dangerouslySetInnerHTML={{ __html: `<svg class="w-4 h-4 text-[#D42020] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 011.414-1.414L8.414 12.172l6.879-6.879a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>&nbsp;${item}` }}
             />
           ))}
         </motion.div>
@@ -103,9 +103,9 @@ export function Hero() {
             size="lg"
             className="bg-white/10 hover:bg-white/20 border border-white/40 hover:border-white/70 text-white font-bold text-base px-8 h-13 backdrop-blur-sm"
           >
-            <Link href="tel:0494782188">
+            <Link href="tel:0633516234">
               <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
-              04 94 78 21 88
+              06 33 51 62 34
             </Link>
           </Button>
         </motion.div>
@@ -119,7 +119,7 @@ export function Hero() {
         >
           {[
             { Icon: Shield, text: "SIRET 882 063 712" },
-            { Icon: Clock, text: "Réponse sous 24h" },
+            { Icon: Clock, text: "Devis sous 1 semaine" },
             { Icon: MapPin, text: "Tout le Var (83)" },
             { Icon: CheckCircle, text: "Garantie décennale" },
           ].map(({ Icon, text }) => (

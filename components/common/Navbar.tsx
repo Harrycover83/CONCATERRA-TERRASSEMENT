@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
@@ -42,20 +42,20 @@ export function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#1A3020] shadow-lg"
-          : "bg-[#1A3020]/95 backdrop-blur-sm"
+          ? "bg-[#57A639] shadow-lg"
+          : "bg-[#57A639]/95 backdrop-blur-sm"
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-28 md:h-32">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3" aria-label="Concaterra Terrassement — Accueil">
             <Image
-              src="/logo.png"
+              src="/logo-navbar.png"
               alt="Concaterra Terrassement"
-              width={120}
-              height={48}
-              className="h-10 w-auto object-contain"
+              width={280}
+              height={112}
+              className="h-24 md:h-28 w-auto object-contain"
               priority
             />
           </Link>
@@ -69,7 +69,7 @@ export function Navbar() {
                 className={`text-sm font-medium transition-colors ${
                   isActive(link.href)
                     ? "text-[#D42020]"
-                    : "text-gray-300 hover:text-white"
+                    : "text-white hover:text-[#D42020]"
                 }`}
               >
                 {link.label}
@@ -133,7 +133,7 @@ export function Navbar() {
             aria-hidden={!menuOpen}
           >
             <nav
-              className="bg-[#1A3020] border-t border-white/10 px-4 py-4 flex flex-col gap-1"
+              className="bg-[#57A639] border-t border-white/10 px-4 py-4 flex flex-col gap-1"
               aria-label="Navigation mobile"
             >
               {navLinks.map((link, i) => (
@@ -147,8 +147,8 @@ export function Navbar() {
                     href={link.href}
                     className={`block py-2.5 px-3 rounded text-sm font-medium transition-colors ${
                       isActive(link.href)
-                        ? "text-[#D42020] bg-white/5"
-                        : "text-gray-300 hover:text-white hover:bg-white/5"
+                        ? "text-[#D42020] bg-white/10"
+                        : "text-white hover:text-[#D42020] hover:bg-white/10"
                     }`}
                   >
                     {link.label}

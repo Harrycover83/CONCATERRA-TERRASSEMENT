@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import { LocalPageLayout } from "@/components/sections/LocalPageLayout"
 import { COMPANY } from "@/lib/constants"
 
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Terrassement Toulon — Concaterra Terrassement, Var (83)",
     description:
-      "Entreprise de terrassement intervenant à Toulon et dans le Var. Devis gratuit sous 24h. Concaterra Terrassement, basé à Gonfaron (83590).",
+      "Entreprise de terrassement intervenant à Toulon et dans le Var. Devis gratuit sous 1 semaine. Concaterra Terrassement, basé à Gonfaron (83590).",
     url: `${COMPANY.siteUrl}/terrassement-toulon`,
   },
 }
@@ -32,10 +32,10 @@ export default function TerrassementToulonPage() {
       lat={43.1242}
       lng={5.928}
       description="Terrassement à Toulon et dans l'agglomération varoise"
-      intro="Entreprise de terrassement et travaux publics intervenant à Toulon et dans l'agglomération toulonnaise. Terrassement général, VRD, enrochement : devis gratuit sous 24h."
+      intro="Entreprise de terrassement et travaux publics intervenant à Toulon et dans l'agglomération toulonnaise. Terrassement général, VRD, enrochement : Devis gratuit sous 1 semaine."
       specificContent={
         <div className="space-y-6 text-gray-700 leading-relaxed">
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Terrassement à Toulon : les spécificités du terrain varois
           </h2>
           <p>
@@ -51,7 +51,7 @@ export default function TerrassementToulonPage() {
             piscines, aménagements extérieurs) et des chantiers professionnels
             (réseaux VRD, voirie, terrassement industriel).
           </p>
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Zones d&apos;intervention autour de Toulon
           </h2>
           <p>

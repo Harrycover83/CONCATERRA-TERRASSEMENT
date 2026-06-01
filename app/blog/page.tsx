@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { Breadcrumb } from "@/components/common/Breadcrumb"
@@ -36,7 +36,7 @@ export default function BlogPage() {
 
       <div className="pt-16 md:pt-20">
         {/* Hero */}
-        <section className="bg-[#1A3020] py-16 text-white">
+        <section className="bg-[#57A639] py-16 text-white">
           <div className="container mx-auto px-4">
             <p className="text-[#D42020] font-semibold uppercase tracking-widest text-sm mb-3">
               Fondations · Terrassement · Assurance
@@ -44,7 +44,7 @@ export default function BlogPage() {
             <h1 className="font-barlow-condensed font-extrabold text-4xl sm:text-5xl uppercase mb-4">
               Guides &amp; Conseils
             </h1>
-            <p className="text-gray-300 max-w-xl text-lg">
+            <p className="text-white/80 max-w-xl text-lg">
               Renforcement de fondation, micropieux, sinistres sécheresse, Cat Nat… et terrassement dans le Var (83) : tout ce qu&apos;un propriétaire doit savoir.
             </p>
           </div>
@@ -70,7 +70,7 @@ export default function BlogPage() {
                       />
                     </Link>
                   ) : (
-                    <div className="bg-[#1A3020] h-48 flex items-center justify-center px-6">
+                    <div className="bg-[#57A639] h-48 flex items-center justify-center px-6">
                       <span className="text-5xl" aria-hidden="true">🏗️</span>
                     </div>
                   )}
@@ -85,7 +85,7 @@ export default function BlogPage() {
                         </Badge>
                       ))}
                     </div>
-                    <h2 className="font-barlow-condensed font-bold text-xl text-[#1A3020] mb-3 leading-tight line-clamp-3">
+                    <h2 className="font-barlow-condensed font-bold text-xl text-[#57A639] mb-3 leading-tight line-clamp-3">
                       <Link
                         href={`/blog/${post.slug}`}
                         className="hover:text-[#D42020] transition-colors"

@@ -1,4 +1,4 @@
-"use client"
+﻿"use client"
 
 import { useState } from "react"
 import { toast } from "sonner"
@@ -92,7 +92,7 @@ export function ContactClient() {
     setLoading(true)
     try {
       await sendDevis(form)
-      toast.success("Votre demande de devis a bien été envoyée ! Nous vous répondrons sous 24h.")
+      toast.success("Votre demande de devis a bien été envoyée ! Nous vous répondrons sous 24h ouvrables.")
       setForm(INITIAL_FORM)
       setErrors({})
     } catch {
@@ -108,17 +108,17 @@ export function ContactClient() {
 
       <div className="pt-16 md:pt-20">
         {/* Hero */}
-        <section className="bg-[#1A3020] py-16 text-white">
+        <section className="bg-[#57A639] py-16 text-white">
           <div className="container mx-auto px-4">
             <p className="text-[#D42020] font-semibold uppercase tracking-widest text-sm mb-3">
-              Devis gratuit — Réponse sous 24h
+              Devis gratuit — Réponse sous 24h ouvrables — Devis sous 1 semaine
             </p>
             <h1 className="font-barlow-condensed font-extrabold text-4xl sm:text-5xl uppercase mb-4">
               Contactez Concaterra Terrassement
             </h1>
-            <p className="text-gray-300 max-w-xl text-lg">
-              Décrivez votre projet, nous vous répondons sous 24h avec un devis
-              gratuit et sans engagement.
+            <p className="text-white/80 max-w-xl text-lg">
+              Décrivez votre projet, nous vous répondons sous 24h ouvrables. Devis
+              gratuit établi sous 1 semaine.
             </p>
           </div>
         </section>
@@ -130,7 +130,7 @@ export function ContactClient() {
 
               {/* Formulaire */}
               <div className="lg:col-span-2 bg-white rounded-2xl shadow-sm p-8">
-                <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase mb-6">
+                <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase mb-6">
                   Demande de devis
                 </h2>
 
@@ -309,7 +309,7 @@ export function ContactClient() {
               {/* Infos contact */}
               <div className="space-y-6">
                 <div className="bg-white rounded-2xl shadow-sm p-6">
-                  <h3 className="font-barlow-condensed font-bold text-xl text-[#1A3020] uppercase mb-4">
+                  <h3 className="font-barlow-condensed font-bold text-xl text-[#57A639] uppercase mb-4">
                     Nous contacter
                   </h3>
                   <div className="space-y-4 text-sm text-gray-700">
@@ -350,24 +350,24 @@ export function ContactClient() {
                       <div>
                         <p className="font-semibold">Horaires</p>
                         <p>Lundi – Vendredi : 7h30 – 18h00</p>
-                        <p>Samedi : 8h00 – 12h00</p>
+
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-[#1A3020] rounded-2xl p-6 text-white">
+                <div className="bg-[#57A639] rounded-2xl p-6 text-white">
                   <p className="font-barlow-condensed font-bold text-xl uppercase mb-2">
-                    Devis sous 24h
+                    Devis sous 1 semaine
                   </p>
-                  <p className="text-gray-300 text-sm">
-                    Nous nous engageons à vous répondre sous 24h ouvrées pour
-                    tout projet dans le Var (83).
+                  <p className="text-white/80 text-sm">
+                    Nous nous engageons à vous répondre sous 24h ouvrables et à établir votre devis
+                    sous 1 semaine pour tout projet dans le Var (83).
                   </p>
                 </div>
 
                 <div className="bg-[#D42020]/10 border border-[#D42020]/30 rounded-2xl p-6">
-                  <p className="font-semibold text-[#1A3020] mb-1">Zone d&apos;intervention</p>
+                  <p className="font-semibold text-[#57A639] mb-1">Zone d&apos;intervention</p>
                   <p className="text-sm text-gray-600">
                     Var (83) — PACA. Gonfaron, Le Luc, Toulon, Draguignan,
                     Brignoles, Hyères et tout le département.

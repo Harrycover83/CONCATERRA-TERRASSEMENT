@@ -83,7 +83,7 @@ export default function TransportMateriauxPage() {
       ]}
       content={
         <div className="space-y-6 text-gray-700 leading-relaxed">
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Transport de matériaux dans le Var : un service indispensable sur chantier
           </h2>
           <p>
@@ -100,7 +100,7 @@ export default function TransportMateriauxPage() {
             Gonfaron à Toulon en passant par Draguignan, Brignoles et Hyères.
           </p>
 
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Évacuation des déblais : conformité et traçabilité
           </h2>
           <p>
@@ -118,7 +118,7 @@ export default function TransportMateriauxPage() {
             matériaux de construction.
           </p>
 
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Location d&apos;engins avec conducteur dans le Var
           </h2>
           <p>

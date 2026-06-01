@@ -14,29 +14,29 @@ const PHOTOS = [
     category: "Terrassement",
   },
   {
-    src: "/images/chantiers/realisation-2.jpg",
+    src: "/images/chantiers/realisation-3.jpg",
     alt: "Travaux VRD Draguignan — voirie et réseaux divers",
     category: "VRD",
   },
   {
     src: "/images/chantiers/realisation-3.jpg",
-    alt: "Enrochement soutènement de berge Var — gabions",
+    alt: "Enrochement soutènement de berge Var",
     category: "Enrochement",
   },
   {
     src: "/images/chantiers/realisation-4.jpg",
-    alt: "Aménagement paysager Gonfaron — allée et clôture",
+    alt: "Aménagement allée carrossable et portail entrée propriété Var",
     category: "Aménagement",
   },
   {
     src: "/images/chantiers/realisation-5.jpg",
-    alt: "Concassage et recyclage matériaux inertes Var",
-    category: "Concassage",
+    alt: "Renforcement de fondations micropieux Var",
+    category: "Fondations",
   },
   {
     src: "/images/chantiers/realisation-6.jpg",
-    alt: "Transport de matériaux camion benne Var 83",
-    category: "Transport",
+    alt: "Terrassement plateforme chantier Var 83",
+    category: "Terrassement",
   },
 ]
 
@@ -50,7 +50,7 @@ function GalleryItem({ photo, index }: { photo: (typeof PHOTOS)[0]; index: numbe
       transition={{ duration: 0.4, delay: index * 0.06 }}
       className="break-inside-avoid relative overflow-hidden rounded-lg group"
     >
-      <div className="relative aspect-[4/3] bg-[#1A3020]">
+      <div className="relative aspect-[4/3] bg-[#57A639]">
         {error ? (
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-2">
             <Camera className="w-8 h-8 text-[#D42020]/40" />
@@ -89,7 +89,7 @@ export function Gallery() {
           <p className="text-[#D42020] font-semibold uppercase tracking-widest text-sm mb-2">
             Notre travail en images
           </p>
-          <h2 className="font-barlow-condensed font-bold text-3xl sm:text-4xl md:text-5xl text-[#1A3020] uppercase mb-4">
+          <h2 className="font-barlow-condensed font-bold text-3xl sm:text-4xl md:text-5xl text-[#57A639] uppercase mb-4">
             Nos réalisations
           </h2>
           <p className="text-gray-600 max-w-xl mx-auto">

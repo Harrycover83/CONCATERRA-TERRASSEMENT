@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import { ServicePageLayout } from "@/components/sections/ServicePageLayout"
 import { COMPANY } from "@/lib/constants"
 
 export const metadata: Metadata = {
   title: "Terrassement général dans le Var (83) — Fouilles, déblais, remblais",
   description:
-    "Terrassement général dans le Var par Concaterra : fouilles, déblais, remblais, nivellement terrain à Gonfaron et dans tout le 83. Devis gratuit sous 24h.",
+    "Terrassement général dans le Var par Concaterra : fouilles, déblais, remblais, nivellement terrain à Gonfaron et dans tout le 83. Devis gratuit sous 1 semaine.",
   keywords: [
     "terrassement général Var",
     "terrassement Gonfaron",
@@ -78,12 +78,12 @@ export default function TerrassementGeneralPage() {
         {
           title: "Réactivité",
           description:
-            "Devis gratuit sous 24h, démarrage rapide. Un seul interlocuteur de la visite de chantier à la réception des travaux.",
+            "Devis gratuit sous 1 semaine, démarrage rapide. Un seul interlocuteur de la visite de chantier à la réception des travaux.",
         },
       ]}
       content={
         <div className="space-y-6 text-gray-700 leading-relaxed">
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Le terrassement général : la base de tout projet de construction
           </h2>
           <p>
@@ -101,7 +101,7 @@ export default function TerrassementGeneralPage() {
             différentes natures de sol rencontrées en Provence.
           </p>
 
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Les étapes d&apos;un terrassement général réussi
           </h2>
           <p>
@@ -124,7 +124,7 @@ export default function TerrassementGeneralPage() {
             le terrain pour les travaux suivants (fondations, VRD, etc.).
           </p>
 
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Terrassement dans le Var : des contraintes spécifiques
           </h2>
           <p>
@@ -141,7 +141,7 @@ export default function TerrassementGeneralPage() {
             chantier, et gestion des terres excavées selon les filières agréées.
           </p>
 
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Terrassement pour particuliers et professionnels
           </h2>
           <p>

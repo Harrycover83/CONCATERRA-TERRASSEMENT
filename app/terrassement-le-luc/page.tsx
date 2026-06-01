@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import { LocalPageLayout } from "@/components/sections/LocalPageLayout"
 import { COMPANY } from "@/lib/constants"
 
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Terrassement Le Luc — Concaterra Terrassement, Var (83)",
     description:
-      "Entreprise de terrassement intervenant au Luc et dans la Plaine des Maures. Devis gratuit sous 24h. Concaterra Terrassement, Gonfaron (83590).",
+      "Entreprise de terrassement intervenant au Luc et dans la Plaine des Maures. Devis gratuit sous 1 semaine. Concaterra Terrassement, Gonfaron (83590).",
     url: `${COMPANY.siteUrl}/terrassement-le-luc`,
   },
 }
@@ -32,10 +32,10 @@ export default function TerrassementLeLucPage() {
       lat={43.3964}
       lng={6.3134}
       description="Terrassement au Luc et dans la Plaine des Maures"
-      intro="Concaterra Terrassement est basé à Gonfaron, tout proche du Luc. Nous intervenons au Luc et dans la Plaine des Maures pour vos terrassements, VRD et aménagements. Devis gratuit sous 24h."
+      intro="Concaterra Terrassement est basé à Gonfaron, tout proche du Luc. Nous intervenons au Luc et dans la Plaine des Maures pour vos terrassements, VRD et aménagements. Devis gratuit sous 1 semaine."
       specificContent={
         <div className="space-y-6 text-gray-700 leading-relaxed">
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Terrassement au Luc : notre secteur de proximité immédiate
           </h2>
           <p>
@@ -51,7 +51,7 @@ export default function TerrassementLeLucPage() {
             parfaitement les terrains locaux : sols argilo-calcaires, nappes
             phréatiques, contraintes liées aux cours d&apos;eau de la plaine.
           </p>
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Zones d&apos;intervention autour du Luc
           </h2>
           <p>

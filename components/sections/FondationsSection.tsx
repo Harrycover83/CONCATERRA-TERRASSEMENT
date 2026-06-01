@@ -54,7 +54,7 @@ const itemVariants = {
 
 export function FondationsSection() {
   return (
-    <section className="py-20 bg-[#0F1A0F] relative overflow-hidden" id="fondations">
+    <section className="py-20 bg-[#1E4A0E] relative overflow-hidden" id="fondations">
       {/* Ligne décorative haut */}
       <div
         className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D42020] to-transparent"

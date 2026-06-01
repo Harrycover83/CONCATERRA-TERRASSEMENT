@@ -23,8 +23,8 @@ const config: Config = {
       colors: {
         primary: "#D42020",
         "primary-dark": "#B01A1A",
-        secondary: "#1A3020",
-        "secondary-light": "#1A3A20",
+        secondary: "#57A639",
+        "secondary-light": "#4D9032",
         background: "#F5F5F0",
         foreground: "#111827",
         border: "hsl(var(--border))",

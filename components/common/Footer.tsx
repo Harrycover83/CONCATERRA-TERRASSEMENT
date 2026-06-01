@@ -5,7 +5,7 @@ export function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="bg-[#1A3020] text-gray-300 pt-12 pb-6">
+    <footer className="bg-[#57A639] text-white/90 pt-12 pb-6">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
           {/* Colonne 1 — Entreprise */}
@@ -28,10 +28,10 @@ export function Footer() {
               Terrassement, VRD, enrochement et aménagement paysager dans toute
               la région PACA.
             </p>
-            <p className="text-xs text-gray-500">
+            <p className="text-xs text-white/60">
               SIREN : {COMPANY.siren} — RCS {COMPANY.rcs}
             </p>
-            <p className="text-xs text-gray-500">Capital : {COMPANY.capital}</p>
+            <p className="text-xs text-white/60">Capital : {COMPANY.capital}</p>
           </div>
 
           {/* Colonne 2 — Services */}
@@ -60,7 +60,7 @@ export function Footer() {
             </h3>
             <ul className="flex flex-wrap gap-x-3 gap-y-1">
               {COMPANY.zone.map((city) => (
-                <li key={city} className="text-sm text-gray-400">
+                <li key={city} className="text-sm text-white/80">
                   {city}
                 </li>
               ))}
@@ -128,13 +128,13 @@ export function Footer() {
                   {COMPANY.email}
                 </a>
               </p>
-              <p className="text-gray-400">{COMPANY.hours}</p>
+              <p className="text-white/70">{COMPANY.hours}</p>
             </address>
           </div>
         </div>
 
         {/* Barre de bas de page */}
-        <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-500">
+        <div className="border-t border-white/20 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/60">
           <p>
             © {year} {COMPANY.legal}. Tous droits réservés.
           </p>

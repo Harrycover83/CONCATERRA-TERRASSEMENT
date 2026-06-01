@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import { ServicePageLayout } from "@/components/sections/ServicePageLayout"
 import { COMPANY } from "@/lib/constants"
 
 export const metadata: Metadata = {
   title: "VRD Voirie et Réseaux Divers dans le Var (83) — Concaterra",
   description:
-    "VRD dans le Var : réseaux eau, électricité, assainissement, chaussées à Gonfaron et dans le 83. Concaterra Terrassement — devis gratuit sous 24h.",
+    "VRD dans le Var : réseaux eau, électricité, assainissement, chaussées à Gonfaron et dans le 83. Concaterra Terrassement — Devis gratuit sous 1 semaine.",
   keywords: [
     "VRD Var",
     "voirie réseaux Gonfaron",
@@ -83,7 +83,7 @@ export default function VRDPage() {
       ]}
       content={
         <div className="space-y-6 text-gray-700 leading-relaxed">
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Les VRD : l&apos;infrastructure indispensable de tout terrain
           </h2>
           <p>
@@ -101,7 +101,7 @@ export default function VRDPage() {
             majeur pour anticiper les contraintes propres à chaque commune du 83.
           </p>
 
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Méthodologie : de la DICT à la réception
           </h2>
           <p>
@@ -127,7 +127,7 @@ export default function VRDPage() {
             attestations de conformité.
           </p>
 
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             VRD pour maisons individuelles, lotissements et professionnels
           </h2>
           <p>

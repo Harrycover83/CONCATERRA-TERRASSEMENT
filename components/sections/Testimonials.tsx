@@ -52,7 +52,7 @@ export function Testimonials() {
   }
 
   return (
-    <section className="py-20 bg-[#1A3020]" id="temoignages">
+    <section className="py-20 bg-[#57A639]" id="temoignages">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
@@ -75,7 +75,7 @@ export function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="bg-white/5 border border-white/10 rounded-xl p-6"
+              className="bg-white/10 border border-white/20 rounded-xl p-6"
             >
               {/* Étoiles */}
               <div className="flex gap-1 mb-4" aria-label={`Note : ${t.rating}/5`}>
@@ -92,7 +92,7 @@ export function Testimonials() {
                 ))}
               </div>
 
-              <p className="text-gray-300 text-sm leading-relaxed mb-4 italic">
+              <p className="text-white/90 text-sm leading-relaxed mb-4 italic">
                 &ldquo;{t.text}&rdquo;
               </p>
 
@@ -101,11 +101,11 @@ export function Testimonials() {
                   <cite className="text-white font-semibold not-italic text-sm">
                     {t.name}
                   </cite>
-                  <p className="text-gray-500 text-xs">{t.location}</p>
+                  <p className="text-white/70 text-xs">{t.location}</p>
                 </div>
                 <time
                   dateTime={t.date}
-                  className="text-gray-500 text-xs"
+                  className="text-white/70 text-xs"
                 >
                   {new Date(t.date).toLocaleDateString("fr-FR", {
                     year: "numeric",

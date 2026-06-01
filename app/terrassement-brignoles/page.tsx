@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import { LocalPageLayout } from "@/components/sections/LocalPageLayout"
 import { COMPANY } from "@/lib/constants"
 
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Terrassement Brignoles — Concaterra Terrassement, Var (83)",
     description:
-      "Entreprise de terrassement intervenant à Brignoles et dans le centre-Var. Devis gratuit sous 24h. Concaterra Terrassement, Gonfaron (83590).",
+      "Entreprise de terrassement intervenant à Brignoles et dans le centre-Var. Devis gratuit sous 1 semaine. Concaterra Terrassement, Gonfaron (83590).",
     url: `${COMPANY.siteUrl}/terrassement-brignoles`,
   },
 }
@@ -32,10 +32,10 @@ export default function TerrassementBrignolesPage() {
       lat={43.4065}
       lng={6.0635}
       description="Terrassement à Brignoles et dans le centre-Var"
-      intro="Concaterra Terrassement intervient à Brignoles et dans le centre-Var pour vos travaux de terrassement, VRD et enrochement. Devis gratuit sous 24h."
+      intro="Concaterra Terrassement intervient à Brignoles et dans le centre-Var pour vos travaux de terrassement, VRD et enrochement. Devis gratuit sous 1 semaine."
       specificContent={
         <div className="space-y-6 text-gray-700 leading-relaxed">
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Terrassement à Brignoles et dans le centre-Var
           </h2>
           <p>
@@ -51,7 +51,7 @@ export default function TerrassementBrignolesPage() {
             kilomètres. Nous sommes l&apos;interlocuteur de proximité pour
             vos projets de terrassement dans le 83.
           </p>
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Zones d&apos;intervention autour de Brignoles
           </h2>
           <p>

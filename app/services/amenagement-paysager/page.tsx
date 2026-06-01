@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import { ServicePageLayout } from "@/components/sections/ServicePageLayout"
 import { COMPANY } from "@/lib/constants"
 
 export const metadata: Metadata = {
   title: "Aménagement paysager dans le Var (83) — Concaterra Terrassement",
   description:
-    "Aménagement paysager dans le Var : espaces verts, allées, clôtures, plantations à Gonfaron et dans le 83. Concaterra Terrassement — devis gratuit sous 24h.",
+    "Aménagement paysager dans le Var : espaces verts, allées, clôtures, plantations à Gonfaron et dans le 83. Concaterra Terrassement — Devis gratuit sous 1 semaine.",
   keywords: [
     "aménagement paysager Var",
     "paysagiste Gonfaron",
@@ -31,7 +31,7 @@ export default function AmenagementPaysagerPage() {
       slug="amenagement-paysager"
       metaDescription="Aménagement paysager dans le Var par Concaterra."
       keywords={["aménagement paysager Var", "paysagiste 83", "espaces verts"]}
-      intro="Concaterra Terrassement réalise vos aménagements paysagers dans le Var : espaces verts, allées carrossables, clôtures, dallages et plantations. Des créations extérieures sur mesure, pensées pour le climat méditerranéen du 83."
+      intro="Concaterra Terrassement réalise vos aménagements paysagers dans le Var : espaces verts, allées carrossables, clôtures. Des créations extérieures sur mesure, pensées pour le climat méditerranéen du 83."
       prestations={[
         {
           title: "Création d'espaces verts",
@@ -41,34 +41,19 @@ export default function AmenagementPaysagerPage() {
         {
           title: "Allées et voies d'accès",
           description:
-            "Création d'allées carrossables ou piétonnes : grave stabilisée, béton balayé, pavés, dallage. Respect de la pente et de l'écoulement des eaux.",
+            "Création d'allées carrossables ou piétonnes : grave stabilisée, béton balayé, pavés. Respect de la pente et de l'écoulement des eaux.",
         },
         {
           title: "Clôtures et portails",
           description:
             "Pose de clôtures grillagées, en bois, murs bahuts, haies végétales. Installation de portails et portillons avec ou sans motorisation.",
         },
-        {
-          title: "Dallages et terrasses",
-          description:
-            "Réalisation de terrasses extérieures : terrassement, dalle béton, pose de carrelage, dallage pierre, terrasse bois. Adaptation aux usages.",
-        },
-        {
-          title: "Plantations",
-          description:
-            "Sélection et mise en place de végétaux adaptés au climat méditerranéen varois : haies persistantes, arbres fruitiers, oliviers, aromates.",
-        },
-        {
-          title: "Arrosage automatique",
-          description:
-            "Conception et installation de systèmes d'arrosage automatique pour jardins et espaces verts : tuyaux, programmateurs, têtes d'arrosage.",
-        },
       ]}
       arguments={[
         {
           title: "Adaptation au climat Var",
           description:
-            "Nous sélectionnons des végétaux et matériaux adaptés au climat méditerranéen : sécheresse estivale, pluies brutales, ensoleillement intense.",
+            "Nous sélectionnons des matériaux adaptés au climat méditerranéen : sécheresse estivale, pluies brutales, ensoleillement intense.",
         },
         {
           title: "Savoir-faire BTP",
@@ -78,12 +63,12 @@ export default function AmenagementPaysagerPage() {
         {
           title: "Prestation globale",
           description:
-            "Du terrassement à la plantation finale, un seul interlocuteur pour l'ensemble de votre projet d'aménagement extérieur.",
+            "Du terrassement à la livraison finale, un seul interlocuteur pour l'ensemble de votre projet d'aménagement extérieur.",
         },
       ]}
       content={
         <div className="space-y-6 text-gray-700 leading-relaxed">
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             L&apos;aménagement paysager en Provence : spécificités et savoir-faire
           </h2>
           <p>
@@ -100,7 +85,7 @@ export default function AmenagementPaysagerPage() {
             esthétique attentive à l&apos;intégration dans le paysage provençal.
           </p>
 
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             De la conception à la réalisation
           </h2>
           <p>
@@ -117,7 +102,7 @@ export default function AmenagementPaysagerPage() {
             la qualité de l&apos;ensemble des travaux paysagers.
           </p>
 
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Végétaux méditerranéens : des choix adaptés au Var
           </h2>
           <p>

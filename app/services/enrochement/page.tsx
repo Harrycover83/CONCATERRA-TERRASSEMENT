@@ -5,13 +5,13 @@ import { COMPANY } from "@/lib/constants"
 export const metadata: Metadata = {
   title: "Enrochement et soutènement dans le Var (83) — Concaterra",
   description:
-    "Enrochement, soutènement et protection de berges dans le Var par Concaterra. Gabions, murs de soutènement, enrochements naturels à Gonfaron et dans le 83.",
+    "Enrochement, soutènement et protection de berges dans le Var par Concaterra. Perrés maçonnés, murs de soutènement, enrochements naturels à Gonfaron et dans le 83.",
   keywords: [
     "enrochement Var",
     "soutènement terrain 83",
     "protection berge Var",
-    "gabion Var",
     "mur soutènement PACA",
+    "perré maçonné Var",
   ],
   alternates: {
     canonical: `${COMPANY.siteUrl}/services/enrochement`,
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Enrochement et soutènement — Var (83) — Concaterra",
     description:
-      "Enrochement, soutènement, gabions et protection de berges dans le Var. Concaterra Terrassement, Gonfaron (83590).",
+      "Enrochement, soutènement et protection de berges dans le Var. Concaterra Terrassement, Gonfaron (83590).",
     url: `${COMPANY.siteUrl}/services/enrochement`,
   },
 }
@@ -31,17 +31,12 @@ export default function EnrochementPage() {
       slug="enrochement"
       metaDescription="Enrochement et soutènement dans le Var par Concaterra."
       keywords={["enrochement Var", "soutènement 83", "protection berge"]}
-      intro="Concaterra Terrassement réalise vos travaux d'enrochement et de soutènement dans le Var : protection de berges, murs de soutènement, gabions. Des solutions robustes et durables pour sécuriser vos terrains en dénivelé dans le 83."
+      intro="Concaterra Terrassement réalise vos travaux d'enrochement et de soutènement dans le Var : protection de berges, murs de soutènement, enrochements naturels. Des solutions robustes et durables pour sécuriser vos terrains en dénivelé dans le 83."
       prestations={[
         {
           title: "Enrochement naturel",
           description:
             "Mise en œuvre de blocs rocheux pour soutenir les talus, consolider les berges et stabiliser les terrains en pente. Pose manuelle ou mécanisée selon l'accessibilité.",
-        },
-        {
-          title: "Murs gabions",
-          description:
-            "Conception et réalisation de murs gabions (cages métalliques remplies de pierres) : soutènement esthétique et résistant, perméable à l'eau.",
         },
         {
           title: "Protection de berges",
@@ -83,7 +78,7 @@ export default function EnrochementPage() {
       ]}
       content={
         <div className="space-y-6 text-gray-700 leading-relaxed">
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             L&apos;enrochement : technique et esthétique pour sécuriser vos terrains
           </h2>
           <p>
@@ -99,11 +94,10 @@ export default function EnrochementPage() {
           <p>
             Concaterra Terrassement maîtrise l&apos;ensemble des techniques
             d&apos;enrochement pratiquées dans la région Provence-Alpes-Côte
-            d&apos;Azur, de la pose de blocs cyclopéens à la réalisation de
-            gabions design, en passant par les perrés maçonnés traditionnels.
+            d&apos;Azur, de la pose de blocs cyclopéens aux perrés maçonnés traditionnels.
           </p>
 
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Quand l&apos;enrochement est-il nécessaire ?
           </h2>
           <p>
@@ -129,7 +123,7 @@ export default function EnrochementPage() {
             </li>
           </ul>
 
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Enrochement dans le Var : pourquoi choisir un professionnel local
           </h2>
           <p>

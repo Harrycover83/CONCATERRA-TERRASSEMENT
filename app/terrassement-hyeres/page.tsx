@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+﻿import type { Metadata } from "next"
 import { LocalPageLayout } from "@/components/sections/LocalPageLayout"
 import { COMPANY } from "@/lib/constants"
 
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Terrassement Hyères — Concaterra Terrassement, Var (83)",
     description:
-      "Entreprise de terrassement intervenant à Hyères et dans l'est-Var. Devis gratuit sous 24h. Concaterra Terrassement, Gonfaron (83590).",
+      "Entreprise de terrassement intervenant à Hyères et dans l'est-Var. Devis gratuit sous 1 semaine. Concaterra Terrassement, Gonfaron (83590).",
     url: `${COMPANY.siteUrl}/terrassement-hyeres`,
   },
 }
@@ -32,10 +32,10 @@ export default function TerrassementHyeresPage() {
       lat={43.1199}
       lng={6.1288}
       description="Terrassement à Hyères et dans l'est-Var"
-      intro="Concaterra Terrassement intervient à Hyères et dans l'est-Var pour tous vos chantiers de terrassement, VRD et aménagements extérieurs. Devis gratuit sous 24h."
+      intro="Concaterra Terrassement intervient à Hyères et dans l'est-Var pour tous vos chantiers de terrassement, VRD et aménagements extérieurs. Devis gratuit sous 1 semaine."
       specificContent={
         <div className="space-y-6 text-gray-700 leading-relaxed">
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Terrassement à Hyères : entre mer et collines
           </h2>
           <p>
@@ -51,7 +51,7 @@ export default function TerrassementHyeresPage() {
             réalisez des travaux VRD en plaine, Concaterra Terrassement adapte
             ses techniques aux contraintes spécifiques de chaque parcelle.
           </p>
-          <h2 className="font-barlow-condensed font-bold text-2xl text-[#1A3020] uppercase">
+          <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Zones d&apos;intervention autour de Hyères
           </h2>
           <p>
