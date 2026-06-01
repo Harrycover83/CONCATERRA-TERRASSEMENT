@@ -50,7 +50,7 @@ export function Hero() {
           <span className="block text-3xl sm:text-4xl md:text-5xl text-white font-normal normal-case tracking-normal mb-2" style={{textShadow:'0 1px 6px rgba(0,0,0,0.7)'}}>
             Le spécialiste du
           </span>
-          <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] text-white">
+          <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] text-white" style={{textShadow:'-1px -1px 0 rgba(0,0,0,0.5), 1px -1px 0 rgba(0,0,0,0.5), -1px 1px 0 rgba(0,0,0,0.5), 1px 1px 0 rgba(0,0,0,0.5)'}}>
             Renforcement
           </span>
           <span className="block text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] text-[#D42020]">
