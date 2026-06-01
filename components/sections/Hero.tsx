@@ -25,17 +25,17 @@ export function Hero() {
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D42020] to-transparent" aria-hidden="true" />
 
       {/* Contenu */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white pt-20">
+      <div className="relative z-10 container mx-auto px-4 text-center text-white pt-32 md:pt-20">
 
         {/* Badge urgence */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2 bg-black/50 backdrop-blur-sm border border-[#D42020]/60 rounded-full px-5 py-2 mb-6"
+          className="inline-flex items-center gap-2 bg-black/50 backdrop-blur-sm border border-[#D42020]/60 rounded-full px-3 sm:px-5 py-2 mb-6"
         >
-          <span className="w-2 h-2 rounded-full bg-[#D42020] animate-pulse" aria-hidden="true" />
-          <span className="text-[#D42020] font-semibold uppercase tracking-widest text-xs">
+          <span className="w-2 h-2 shrink-0 rounded-full bg-[#D42020] animate-pulse" aria-hidden="true" />
+          <span className="text-[#D42020] font-semibold uppercase tracking-wider sm:tracking-widest text-[10px] sm:text-xs whitespace-nowrap">
             Fondations &amp; Terrassement — Var (83)
           </span>
         </motion.div>
