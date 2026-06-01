@@ -47,10 +47,10 @@ export function StatsSection() {
               key={stat.label}
               className="flex flex-col items-center justify-center py-10 px-4 text-center"
             >
-              <span className="font-barlow-condensed font-extrabold text-4xl sm:text-5xl text-[#D42020]">
+              <span className="font-barlow-condensed font-extrabold text-4xl sm:text-5xl text-white">
                 <Counter target={stat.value} suffix={stat.suffix} />
               </span>
-              <span className="text-white/50 text-sm mt-1 uppercase tracking-wide">
+              <span className="text-white/80 text-sm mt-1 uppercase tracking-wide">
                 {stat.label}
               </span>
             </div>

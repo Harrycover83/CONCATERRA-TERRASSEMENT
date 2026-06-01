@@ -5,9 +5,6 @@ module.exports = {
   exclude: ["/mentions-legales"],
   robotsTxtOptions: {
     policies: [{ userAgent: "*", allow: "/" }],
-    additionalSitemaps: [
-      "https://concaterra-terrassement.fr/sitemap.xml",
-    ],
   },
   transform: async (config, path) => {
     const priorities = {
