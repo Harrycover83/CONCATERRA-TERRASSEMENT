@@ -92,11 +92,11 @@ export default function RenforcementFondationsPage() {
             Les micropieux : la solution de référence
           </h2>
           <p>
-            Le micropieu est la technique la plus utilisée pour reprendre les fondations d'un
+            Le micropieu est la technique la plus utilisée pour reprendre les fondations d&apos;un
             bâtiment existant. De petit diamètre (15 à 30 cm), il est foré à travers les
-            fondations actuelles et injecté jusqu'à une couche de sol stable, reportant les
-            charges sur un sol sain. Cette technique permet d'intervenir de l'intérieur comme
-            de l'extérieur, avec un matériel compact adapté aux accès difficiles.
+            fondations actuelles et injecté jusqu&apos;à une couche de sol stable, reportant les
+            charges sur un sol sain. Cette technique permet d&apos;intervenir de l&apos;intérieur comme
+            de l&apos;extérieur, avec un matériel compact adapté aux accès difficiles.
           </p>
           <h2 className="font-barlow-condensed font-bold text-2xl text-[#57A639] uppercase">
             Sinistres sécheresse et Cat Nat
@@ -105,7 +105,7 @@ export default function RenforcementFondationsPage() {
             Lorsque votre commune est reconnue en état de catastrophe naturelle (arrêté Cat Nat),
             les travaux de renforcement de fondations peuvent être pris en charge par votre
             assurance habitation. Concaterra vous accompagne dans toutes les étapes : constat
-            des dégâts, devis, coordination avec l'expert d'assurance, réalisation des travaux
+            des dégâts, devis, coordination avec l&apos;expert d&apos;assurance, réalisation des travaux
             et rapport de fin de chantier.
           </p>
         </div>
