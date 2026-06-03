@@ -36,6 +36,20 @@ export const COMPANY = {
 
 export const SERVICES = [
   {
+    slug: "renforcement-fondations",
+    title: "Renforcement de fondations",
+    shortDesc: "Micropieux, reprise en sous-œuvre, sinistres sécheresse Cat Nat.",
+    icon: "🏗️",
+    keywords: ["renforcement fondation Var", "micropieux 83"],
+  },
+  {
+    slug: "enrochement",
+    title: "Enrochement",
+    shortDesc: "Soutènement, protection de berges et perrés maçonnés.",
+    icon: "⛰️",
+    keywords: ["enrochement Var", "soutènement terrain 83"],
+  },
+  {
     slug: "terrassement-general",
     title: "Terrassement général",
     shortDesc: "Fouilles, déblais, remblais et nivellement de terrain.",
@@ -50,25 +64,11 @@ export const SERVICES = [
     keywords: ["VRD Var", "voirie réseaux Gonfaron", "assainissement 83"],
   },
   {
-    slug: "enrochement",
-    title: "Enrochement",
-    shortDesc: "Soutènement, protection de berges et perrés maçonnés.",
-    icon: "⛰️",
-    keywords: ["enrochement Var", "soutènement terrain 83"],
-  },
-  {
     slug: "amenagement-paysager",
     title: "Aménagement paysager",
     shortDesc: "Espaces verts, allées, clôtures et terrassement extérieur.",
     icon: "🌿",
     keywords: ["aménagement paysager Var", "paysagiste Gonfaron"],
-  },
-  {
-    slug: "renforcement-fondations",
-    title: "Renforcement de fondations",
-    shortDesc: "Micropieux, reprise en sous-œuvre, sinistres sécheresse Cat Nat.",
-    icon: "🏗️",
-    keywords: ["renforcement fondation Var", "micropieux 83"],
   },
 ]
 
