@@ -136,7 +136,7 @@ export default function HomePage() {
       <FAQ />
 
       {/* CTA final */}
-      <section className="py-24 bg-[#1E4A0E] relative overflow-hidden">
+      <section className="py-24 bg-white relative overflow-hidden">
         {/* Ligne décorative */}
         <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#D42020] to-transparent" aria-hidden="true" />
 
@@ -144,11 +144,11 @@ export default function HomePage() {
           <p className="text-[#D42020] font-semibold uppercase tracking-widest text-xs mb-4">
             Passez à l&apos;action
           </p>
-          <h2 className="font-barlow-condensed font-extrabold text-4xl sm:text-5xl md:text-6xl text-white uppercase mb-6 leading-tight">
+          <h2 className="font-barlow-condensed font-extrabold text-4xl sm:text-5xl md:text-6xl text-gray-900 uppercase mb-6 leading-tight">
             Prêt à démarrer<br />
             <span className="text-[#D42020]">votre projet ?</span>
           </h2>
-          <p className="text-white/50 text-lg mb-10 max-w-xl mx-auto">
+          <p className="text-gray-500 text-lg mb-10 max-w-xl mx-auto">
             Contactez-nous dès aujourd&apos;hui. Devis gratuit et sans engagement — réponse sous 24h ouvrables, devis sous 1 semaine.
           </p>
 
@@ -166,7 +166,7 @@ export default function HomePage() {
             <Button
               asChild
               size="lg"
-              className="bg-white/10 hover:bg-white/20 border border-white/40 hover:border-white/70 text-white font-bold text-base px-10 h-12 backdrop-blur-sm"
+              className="bg-transparent hover:bg-gray-100 border border-gray-300 hover:border-gray-400 text-gray-900 font-bold text-base px-10 h-12"
             >
               <a href={`tel:${COMPANY.phone}`}>
                 <Phone className="w-4 h-4 mr-2" aria-hidden="true" />
@@ -175,7 +175,7 @@ export default function HomePage() {
             </Button>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-6 text-xs text-white/30">
+          <div className="flex flex-wrap justify-center gap-6 text-xs text-gray-400">
             {["Devis 100% gratuit", "Sans engagement", "Devis sous 1 semaine", "Intervention dans tout le Var"].map((item) => (
               <span key={item} className="flex items-center gap-1.5">
                 <CheckCircle className="w-3.5 h-3.5 text-[#D42020]" aria-hidden="true" />
