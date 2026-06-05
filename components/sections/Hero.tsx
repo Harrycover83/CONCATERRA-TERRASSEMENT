@@ -14,7 +14,7 @@ export function Hero() {
       {/* Photo de fond */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/chantiers/realisation-3-raw.jpg')" }}
+        style={{ backgroundImage: "url('/images/chantiers/principale-compressed.jpg')" }}
         role="img"
         aria-label="Renforcement de fondation tarière Var Concaterra"
       />
