@@ -23,7 +23,6 @@ export async function sendDevis(data: DevisFormData): Promise<void> {
       from_name: `${data.prenom} ${data.nom}`,
       telephone: data.telephone,
       email: data.email,
-      prestation: data.prestation,
       commune: data.commune,
       description: data.description,
     },

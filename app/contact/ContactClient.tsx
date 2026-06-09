@@ -8,15 +8,8 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
 import { sendDevis, type DevisFormData } from "@/lib/emailjs"
-import { COMPANY, SERVICES } from "@/lib/constants"
+import { COMPANY } from "@/lib/constants"
 
 const INITIAL_FORM: DevisFormData = {
   nom: "",
@@ -28,6 +21,7 @@ const INITIAL_FORM: DevisFormData = {
   description: "",
   rgpd: false,
 }
+
 
 const PHONE_REGEX = /^(?:(?:\+|00)33|0)[1-9](?:[0-9]{8})$/
 
@@ -55,7 +49,6 @@ export function ContactClient() {
       newErrors.email = "Adresse email invalide"
     }
 
-    if (!form.prestation) newErrors.prestation = "Veuillez sélectionner une prestation"
     if (!form.commune.trim()) newErrors.commune = "Commune requise"
     if (!form.description.trim()) newErrors.description = "Description requise"
     if (!form.rgpd) newErrors.rgpd = "Vous devez accepter la politique de confidentialité"
@@ -75,13 +68,6 @@ export function ContactClient() {
     }))
     if (errors[name as keyof DevisFormData]) {
       setErrors((prev) => ({ ...prev, [name]: undefined }))
-    }
-  }
-
-  const handleSelectChange = (value: string) => {
-    setForm((prev) => ({ ...prev, prestation: value }))
-    if (errors.prestation) {
-      setErrors((prev) => ({ ...prev, prestation: undefined }))
     }
   }
 
@@ -207,34 +193,6 @@ export function ContactClient() {
                         <p id="email-error" className="text-red-500 text-xs">{errors.email}</p>
                       )}
                     </div>
-                  </div>
-
-                  {/* Type de prestation */}
-                  <div className="space-y-1">
-                    <Label htmlFor="prestation">Type de prestation *</Label>
-                    <Select
-                      value={form.prestation}
-                      onValueChange={handleSelectChange}
-                    >
-                      <SelectTrigger
-                        id="prestation"
-                        aria-invalid={!!errors.prestation}
-                        aria-describedby={errors.prestation ? "prestation-error" : undefined}
-                      >
-                        <SelectValue placeholder="Sélectionner une prestation" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {SERVICES.map((s) => (
-                          <SelectItem key={s.slug} value={s.slug}>
-                            {s.icon} {s.title}
-                          </SelectItem>
-                        ))}
-                        <SelectItem value="autre">Autre / Je ne sais pas</SelectItem>
-                      </SelectContent>
-                    </Select>
-                    {errors.prestation && (
-                      <p id="prestation-error" className="text-red-500 text-xs">{errors.prestation}</p>
-                    )}
                   </div>
 
                   {/* Commune */}
