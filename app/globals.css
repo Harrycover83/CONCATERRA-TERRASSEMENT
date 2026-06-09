@@ -93,3 +93,8 @@
     scrollbar-gutter: stable;
   }
 }
+
+/* Fix Radix UI dropdown z-index */
+[data-radix-popper-content-wrapper] {
+  z-index: 9999 !important;
+}
