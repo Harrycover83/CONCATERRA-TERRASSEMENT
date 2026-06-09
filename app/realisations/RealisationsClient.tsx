@@ -256,6 +256,34 @@ const REALISATIONS: Realisation[] = [
     title: "Cage micropieu ferraillage vue plongée",
     location: "Var (83)",
   },
+  {
+    src: "/images/chantiers/realisation-45.jpg",
+    alt: "Mini-pelle CAT verte terrassement bord de mer coucher de soleil côte varoise",
+    category: "terrassement",
+    title: "Terrassement bord de mer coucher de soleil",
+    location: "Côte Varoise (83)",
+  },
+  {
+    src: "/images/chantiers/realisation-46.jpg",
+    alt: "Allée gravillons terrassée entre deux talus villa provençale Var",
+    category: "terrassement",
+    title: "Allée gravillons entre talus",
+    location: "Var (83)",
+  },
+  {
+    src: "/images/chantiers/realisation-47.jpg",
+    alt: "Grande fouille terrassée avec drainage et excavateur Takeuchi Var",
+    category: "terrassement",
+    title: "Grande fouille terrassement drainage",
+    location: "Var (83)",
+  },
+  {
+    src: "/images/chantiers/realisation-48.jpg",
+    alt: "Terrain après démolition avec déblais et blocs béton préfabriqués vue mer côte varoise",
+    category: "demolition",
+    title: "Déblais après démolition vue mer",
+    location: "Côte Varoise (83)",
+  },
 ]
 
 function RealisationCard({ r }: { r: Realisation }) {
