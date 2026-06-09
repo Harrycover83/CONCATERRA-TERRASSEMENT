@@ -14,7 +14,7 @@ export const COMPANY = {
   lng: 6.3333,
   phone: "0633516234",
   phoneFormatted: "06 33 51 62 34",
-  email: "secreteriat.concaterra@gmail.com",
+  email: "secretariat.concaterra@gmail.com",
   siteUrl: "https://concaterra-terrassement.fr",
   hours: "Lundi – Vendredi : 7h00 – 18h00",
   instagram: "concaterra",
